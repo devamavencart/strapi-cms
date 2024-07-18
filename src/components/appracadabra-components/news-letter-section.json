@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_appracadabra_components_news_letter_sections",
+  "info": {
+    "displayName": "NewsLetterSection"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

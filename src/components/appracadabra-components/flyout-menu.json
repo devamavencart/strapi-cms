@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_appracadabra_components_flyout_menus",
+  "info": {
+    "displayName": "FlyoutMenu",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "href": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "Popover",
+        "ChartPieIcon",
+        "CursorArrowRaysIcon",
+        "ArrowPathIcon",
+        "CloudArrowUpIcon",
+        "FingerPrintIcon",
+        "LockClosedIcon"
+      ]
+    }
+  }
+}

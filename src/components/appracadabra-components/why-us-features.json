@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_appracadabra_components_why_us_features",
+  "info": {
+    "displayName": "WhyUsFeatures"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "icons": {
+      "type": "enumeration",
+      "enum": [
+        "CloudArrowUpIcon",
+        "LockClosedIcon",
+        "ArrowPathIcon",
+        "FingerPrintIcon"
+      ]
+    }
+  }
+}

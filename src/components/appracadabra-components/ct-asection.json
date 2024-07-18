@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_appracadabra_components_ct_asections",
+  "info": {
+    "displayName": "CTAsection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titleSectionOne": {
+      "type": "string"
+    },
+    "titleSectionTwo": {
+      "type": "string"
+    },
+    "onClickButton": {
+      "type": "string"
+    },
+    "onClickRedirect": {
+      "type": "string"
+    }
+  }
+}

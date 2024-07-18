@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_appracadabra_components_our_apps_sections",
+  "info": {
+    "displayName": "OurAppsSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string",
+      "repeatable": false
+    },
+    "Image": {
+      "displayName": "Image",
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.image"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonRedirect": {
+      "type": "string"
+    },
+    "DescriptionSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.our-apps-description-section"
+    }
+  }
+}

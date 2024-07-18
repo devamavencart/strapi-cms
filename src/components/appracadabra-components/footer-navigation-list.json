@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_appracadabra_components_footer_navigation_lists",
+  "info": {
+    "displayName": "FooterNavigationList"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "appracadabra_landing_pages",
+  "info": {
+    "singularName": "appracadabra-landing-page",
+    "pluralName": "appracadabra-landing-pages",
+    "displayName": "appracadabra-landing-page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Logo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Button": {
+      "type": "string"
+    },
+    "HeaderNavbarSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.header"
+    },
+    "HeroSectionContent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.hero-section"
+    },
+    "TestimonialSectionContent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.testimonial-section"
+    },
+    "OurAppContent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.our-apps-section"
+    },
+    "WhyUsContentSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.why-us-section"
+    },
+    "CTAcontentSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.ct-asection"
+    },
+    "NewsLetterSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.news-letter-section"
+    },
+    "SocialMediaLinks": {
+      "displayName": "SocialLinks",
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.social-links"
+    }
+  }
+}

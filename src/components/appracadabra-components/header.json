@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_appracadabra_components_headers",
+  "info": {
+    "displayName": "header",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "flyoutMenu": {
+      "type": "boolean",
+      "default": false
+    },
+    "Options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.flyout-menu"
+    }
+  }
+}
