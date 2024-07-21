@@ -13,7 +13,14 @@
       "type": "string"
     },
     "icon": {
-      "type": "string"
+      "type": "enumeration",
+      "enum": [
+        "Facebook",
+        "Instagram",
+        "X",
+        "GitHub",
+        "Youtube"
+      ]
     }
   }
 }
