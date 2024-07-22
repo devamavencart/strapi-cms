@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_appracadabra_components_landing_page_faq_lists",
+  "info": {
+    "displayName": "Landing-Page-FAQ-Lists"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "text"
+    },
+    "answer": {
+      "type": "text"
+    }
+  }
+}

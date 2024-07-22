@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_appracadabra_components_landing_page_princing_contents",
+  "info": {
+    "displayName": "Landing-Page-PrincingContent",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "PricingFrequencies": {
+      "displayName": "Landing-Page--Pricing-Frequencies",
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.landing-page-pricing-frequencies"
+    }
+  }
+}

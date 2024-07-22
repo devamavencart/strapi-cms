@@ -433,6 +433,528 @@ export interface AppracadabraComponentsNewsLetterSection
   };
 }
 
+export interface AppracadabraComponentsLandingPageWhyUs
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_landing_page_whyuses';
+  info: {
+    displayName: 'Landing-Page-WhyUs';
+  };
+  attributes: {
+    title: Attribute.String;
+    mainTitle: Attribute.String;
+    description: Attribute.Text;
+    FeatureList: Attribute.Component<
+      'appracadabra-components.landing-page-why-us-feature-list',
+      true
+    >;
+  };
+}
+
+export interface AppracadabraComponentsLandingPageWhyUsFeatureList
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_landing_page_why_us_feature_lists';
+  info: {
+    displayName: 'Landing-Page-WhyUs-Feature-List';
+    description: '';
+  };
+  attributes: {
+    name: Attribute.String;
+    description: Attribute.Text;
+    icon: Attribute.Enumeration<
+      [
+        'AcademicCapIcon',
+        'AdjustmentsHorizontalIcon',
+        'AdjustmentsVerticalIcon',
+        'ArchiveBoxArrowDownIcon',
+        'ArchiveBoxXMarkIcon',
+        'ArchiveBoxIcon',
+        'ArrowDownCircleIcon',
+        'ArrowDownLeftIcon',
+        'ArrowDownOnSquareStackIcon',
+        'ArrowDownOnSquareIcon',
+        'ArrowDownRightIcon',
+        'ArrowDownTrayIcon',
+        'ArrowDownIcon',
+        'ArrowLeftCircleIcon',
+        'ArrowLeftEndOnRectangleIcon',
+        'ArrowLeftOnRectangleIcon',
+        'ArrowLeftStartOnRectangleIcon',
+        'ArrowLeftIcon',
+        'ArrowLongDownIcon',
+        'ArrowLongLeftIcon',
+        'ArrowLongRightIcon',
+        'ArrowLongUpIcon',
+        'ArrowPathRoundedSquareIcon',
+        'ArrowPathIcon',
+        'ArrowRightCircleIcon',
+        'ArrowRightEndOnRectangleIcon',
+        'ArrowRightOnRectangleIcon',
+        'ArrowRightStartOnRectangleIcon',
+        'ArrowRightIcon',
+        'ArrowSmallDownIcon',
+        'ArrowSmallLeftIcon',
+        'ArrowSmallRightIcon',
+        'ArrowSmallUpIcon',
+        'ArrowTopRightOnSquareIcon',
+        'ArrowTrendingDownIcon',
+        'ArrowTrendingUpIcon',
+        'ArrowTurnDownLeftIcon',
+        'ArrowTurnDownRightIcon',
+        'ArrowTurnLeftDownIcon',
+        'ArrowTurnLeftUpIcon',
+        'ArrowTurnRightDownIcon',
+        'ArrowTurnRightUpIcon',
+        'ArrowTurnUpLeftIcon',
+        'ArrowTurnUpRightIcon',
+        'ArrowUpCircleIcon',
+        'ArrowUpLeftIcon',
+        'ArrowUpOnSquareStackIcon',
+        'ArrowUpOnSquareIcon',
+        'ArrowUpRightIcon',
+        'ArrowUpTrayIcon',
+        'ArrowUpIcon',
+        'ArrowUturnDownIcon',
+        'ArrowUturnLeftIcon',
+        'ArrowUturnRightIcon',
+        'ArrowUturnUpIcon',
+        'ArrowsPointingInIcon',
+        'ArrowsPointingOutIcon',
+        'ArrowsRightLeftIcon',
+        'ArrowsUpDownIcon',
+        'AtSymbolIcon',
+        'BackspaceIcon',
+        'BackwardIcon',
+        'BanknotesIcon',
+        'Bars2Icon',
+        'Bars3BottomLeftIcon',
+        'Bars3BottomRightIcon',
+        'Bars3CenterLeftIcon',
+        'Bars3Icon',
+        'Bars4Icon',
+        'BarsArrowDownIcon',
+        'BarsArrowUpIcon',
+        'Battery0Icon',
+        'Battery100Icon',
+        'Battery50Icon',
+        'BeakerIcon',
+        'BellAlertIcon',
+        'BellSlashIcon',
+        'BellSnoozeIcon',
+        'BellIcon',
+        'BoldIcon',
+        'BoltSlashIcon',
+        'BoltIcon',
+        'BookOpenIcon',
+        'BookmarkSlashIcon',
+        'BookmarkSquareIcon',
+        'BookmarkIcon',
+        'BriefcaseIcon',
+        'BugAntIcon',
+        'BuildingLibraryIcon',
+        'BuildingOffice2Icon',
+        'BuildingOfficeIcon',
+        'BuildingStorefrontIcon',
+        'CakeIcon',
+        'CalculatorIcon',
+        'CalendarDateRangeIcon',
+        'CalendarDaysIcon',
+        'CalendarIcon',
+        'CameraIcon',
+        'ChartBarSquareIcon',
+        'ChartBarIcon',
+        'ChartPieIcon',
+        'ChatBubbleBottomCenterTextIcon',
+        'ChatBubbleBottomCenterIcon',
+        'ChatBubbleLeftEllipsisIcon',
+        'ChatBubbleLeftRightIcon',
+        'ChatBubbleLeftIcon',
+        'ChatBubbleOvalLeftEllipsisIcon',
+        'ChatBubbleOvalLeftIcon',
+        'CheckBadgeIcon',
+        'CheckCircleIcon',
+        'CheckIcon',
+        'ChevronDoubleDownIcon',
+        'ChevronDoubleLeftIcon',
+        'ChevronDoubleRightIcon',
+        'ChevronDoubleUpIcon',
+        'ChevronDownIcon',
+        'ChevronLeftIcon',
+        'ChevronRightIcon',
+        'ChevronUpDownIcon',
+        'ChevronUpIcon',
+        'CircleStackIcon',
+        'ClipboardDocumentCheckIcon',
+        'ClipboardDocumentListIcon',
+        'ClipboardDocumentIcon',
+        'ClipboardIcon',
+        'ClockIcon',
+        'CloudArrowDownIcon',
+        'CloudArrowUpIcon',
+        'CloudIcon',
+        'CodeBracketSquareIcon',
+        'CodeBracketIcon',
+        'Cog6ToothIcon',
+        'Cog8ToothIcon',
+        'CogIcon',
+        'CommandLineIcon',
+        'ComputerDesktopIcon',
+        'CpuChipIcon',
+        'CreditCardIcon',
+        'CubeTransparentIcon',
+        'CubeIcon',
+        'CurrencyBangladeshiIcon',
+        'CurrencyDollarIcon',
+        'CurrencyEuroIcon',
+        'CurrencyPoundIcon',
+        'CurrencyRupeeIcon',
+        'CurrencyYenIcon',
+        'CursorArrowRaysIcon',
+        'CursorArrowRippleIcon',
+        'DevicePhoneMobileIcon',
+        'DeviceTabletIcon',
+        'DivideIcon',
+        'DocumentArrowDownIcon',
+        'DocumentArrowUpIcon',
+        'DocumentChartBarIcon',
+        'DocumentCheckIcon',
+        'DocumentCurrencyBangladeshiIcon',
+        'DocumentCurrencyDollarIcon',
+        'DocumentCurrencyEuroIcon',
+        'DocumentCurrencyPoundIcon',
+        'DocumentCurrencyRupeeIcon',
+        'DocumentCurrencyYenIcon',
+        'DocumentDuplicateIcon',
+        'DocumentMagnifyingGlassIcon',
+        'DocumentMinusIcon',
+        'DocumentPlusIcon',
+        'DocumentTextIcon',
+        'DocumentIcon',
+        'EllipsisHorizontalCircleIcon',
+        'EllipsisHorizontalIcon',
+        'EllipsisVerticalIcon',
+        'EnvelopeOpenIcon',
+        'EnvelopeIcon',
+        'EqualsIcon',
+        'ExclamationCircleIcon',
+        'ExclamationTriangleIcon',
+        'EyeDropperIcon',
+        'EyeSlashIcon',
+        'EyeIcon',
+        'FaceFrownIcon',
+        'FaceSmileIcon',
+        'FilmIcon',
+        'FingerPrintIcon',
+        'FireIcon',
+        'FlagIcon',
+        'FolderArrowDownIcon',
+        'FolderMinusIcon',
+        'FolderOpenIcon',
+        'FolderPlusIcon',
+        'FolderIcon',
+        'ForwardIcon',
+        'FunnelIcon',
+        'GifIcon',
+        'GiftTopIcon',
+        'GiftIcon',
+        'GlobeAltIcon',
+        'GlobeAmericasIcon',
+        'GlobeAsiaAustraliaIcon',
+        'GlobeEuropeAfricaIcon',
+        'H1Icon',
+        'H2Icon',
+        'H3Icon',
+        'HandRaisedIcon',
+        'HandThumbDownIcon',
+        'HandThumbUpIcon',
+        'HashtagIcon',
+        'HeartIcon',
+        'HomeModernIcon',
+        'HomeIcon',
+        'IdentificationIcon',
+        'InboxArrowDownIcon',
+        'InboxStackIcon',
+        'InboxIcon',
+        'InformationCircleIcon',
+        'ItalicIcon',
+        'KeyIcon',
+        'LanguageIcon',
+        'LifebuoyIcon',
+        'LightBulbIcon',
+        'LinkSlashIcon',
+        'LinkIcon',
+        'ListBulletIcon',
+        'LockClosedIcon',
+        'LockOpenIcon',
+        'MagnifyingGlassCircleIcon',
+        'MagnifyingGlassMinusIcon',
+        'MagnifyingGlassPlusIcon',
+        'MagnifyingGlassIcon',
+        'MapPinIcon',
+        'MapIcon',
+        'MegaphoneIcon',
+        'MicrophoneIcon',
+        'MinusCircleIcon',
+        'MinusSmallIcon',
+        'MinusIcon',
+        'MoonIcon',
+        'MusicalNoteIcon',
+        'NewspaperIcon',
+        'NoSymbolIcon',
+        'NumberedListIcon',
+        'PaintBrushIcon',
+        'PaperAirplaneIcon',
+        'PaperClipIcon',
+        'PauseCircleIcon',
+        'PauseIcon',
+        'PencilSquareIcon',
+        'PencilIcon',
+        'PercentBadgeIcon',
+        'PhoneArrowDownLeftIcon',
+        'PhoneArrowUpRightIcon',
+        'PhoneXMarkIcon',
+        'PhoneIcon',
+        'PhotoIcon',
+        'PlayCircleIcon',
+        'PlayPauseIcon',
+        'PlayIcon',
+        'PlusCircleIcon',
+        'PlusSmallIcon',
+        'PlusIcon',
+        'PowerIcon',
+        'PresentationChartBarIcon',
+        'PresentationChartLineIcon',
+        'PrinterIcon',
+        'PuzzlePieceIcon',
+        'QrCodeIcon',
+        'QuestionMarkCircleIcon',
+        'QueueListIcon',
+        'RadioIcon',
+        'ReceiptPercentIcon',
+        'ReceiptRefundIcon',
+        'RectangleGroupIcon',
+        'RectangleStackIcon',
+        'RocketLaunchIcon',
+        'RssIcon',
+        'ScaleIcon',
+        'ScissorsIcon',
+        'ServerStackIcon',
+        'ServerIcon',
+        'ShareIcon',
+        'ShieldCheckIcon',
+        'ShieldExclamationIcon',
+        'ShoppingBagIcon',
+        'ShoppingCartIcon',
+        'SignalSlashIcon',
+        'SignalIcon',
+        'SlashIcon',
+        'SparklesIcon',
+        'SpeakerWaveIcon',
+        'SpeakerXMarkIcon',
+        'Square2StackIcon',
+        'Square3Stack3DIcon',
+        'Squares2X2Icon',
+        'SquaresPlusIcon',
+        'StarIcon',
+        'StopCircleIcon',
+        'StopIcon',
+        'StrikethroughIcon',
+        'SunIcon',
+        'SwatchIcon',
+        'TableCellsIcon',
+        'TagIcon',
+        'TicketIcon',
+        'TrashIcon',
+        'TrophyIcon',
+        'TruckIcon',
+        'TvIcon',
+        'UnderlineIcon',
+        'UserCircleIcon',
+        'UserGroupIcon',
+        'UserMinusIcon',
+        'UserPlusIcon',
+        'UserIcon',
+        'UsersIcon',
+        'VariableIcon',
+        'VideoCameraSlashIcon',
+        'VideoCameraIcon',
+        'ViewColumnsIcon',
+        'ViewfinderCircleIcon',
+        'WalletIcon',
+        'WifiIcon',
+        'WindowIcon',
+        'WrenchScrewdriverIcon',
+        'WrenchIcon',
+        'XCircleIcon',
+        'XMarkIcon'
+      ]
+    >;
+  };
+}
+
+export interface AppracadabraComponentsLandingPageTestimonials
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_landing_page_testimonials';
+  info: {
+    displayName: 'Landing-Page-Testimonials';
+  };
+  attributes: {
+    userName: Attribute.String;
+    userProfile: Attribute.String;
+    userFeedBack: Attribute.String;
+    imgAlt: Attribute.String;
+    imgSrc: Attribute.String;
+  };
+}
+
+export interface AppracadabraComponentsLandingPagePrincingContent
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_landing_page_princing_contents';
+  info: {
+    displayName: 'Landing-Page-PrincingContent';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Text;
+    PricingFrequencies: Attribute.Component<
+      'appracadabra-components.landing-page-pricing-frequencies',
+      true
+    >;
+  };
+}
+
+export interface AppracadabraComponentsLandingPagePricingTiers
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_landing_page_pricing_tiers';
+  info: {
+    displayName: 'Landing-Page-Pricing-Tiers';
+    description: '';
+  };
+  attributes: {
+    name: Attribute.String;
+    href: Attribute.String;
+    featured: Attribute.Boolean & Attribute.DefaultTo<false>;
+    description: Attribute.Text;
+    pricingMonthly: Attribute.String;
+    pricingAnnually: Attribute.String;
+    MainFeatures: Attribute.Component<
+      'appracadabra-components.landing-page-pricing-main-feature',
+      true
+    >;
+  };
+}
+
+export interface AppracadabraComponentsLandingPagePricingMainFeature
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_landing_page_pricing_main_features';
+  info: {
+    displayName: 'Landing-Page-Pricing-MainFeature';
+  };
+  attributes: {
+    name: Attribute.String;
+  };
+}
+
+export interface AppracadabraComponentsLandingPagePricingFrequencies
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_landing_page_pricing_frequencies';
+  info: {
+    displayName: 'Landing-Page--Pricing-Frequencies';
+  };
+  attributes: {
+    value: Attribute.Enumeration<['Annually', 'Monthly']>;
+  };
+}
+
+export interface AppracadabraComponentsLandingPageHeroSection
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_landing_page_hero_sections';
+  info: {
+    displayName: 'Landing-Page-HeroSection';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Text;
+    linkText: Attribute.String;
+    href: Attribute.String;
+    image: Attribute.Media<'images'>;
+  };
+}
+
+export interface AppracadabraComponentsLandingPageFeature
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_landing_page_features';
+  info: {
+    displayName: 'Landing-Page-Feature';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Text;
+    FeatureList: Attribute.Component<
+      'appracadabra-components.landing-page-feature-list',
+      true
+    >;
+  };
+}
+
+export interface AppracadabraComponentsLandingPageFeatureList
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_landing_page_feature_lists';
+  info: {
+    displayName: 'Landing-Page-Feature-List';
+    description: '';
+  };
+  attributes: {
+    name: Attribute.String;
+    description: Attribute.Text;
+    imageAlt: Attribute.String;
+    image: Attribute.Media<'images'>;
+  };
+}
+
+export interface AppracadabraComponentsLandingPageFaq extends Schema.Component {
+  collectionName: 'components_appracadabra_components_landing_page_faqs';
+  info: {
+    displayName: 'Landing-Page-FAQ';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Text;
+    FAQlists: Attribute.Component<
+      'appracadabra-components.landing-page-faq-lists',
+      true
+    >;
+  };
+}
+
+export interface AppracadabraComponentsLandingPageFaqLists
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_landing_page_faq_lists';
+  info: {
+    displayName: 'Landing-Page-FAQ-Lists';
+  };
+  attributes: {
+    question: Attribute.Text;
+    answer: Attribute.Text;
+  };
+}
+
+export interface AppracadabraComponentsLandingPageCta extends Schema.Component {
+  collectionName: 'components_appracadabra_components_landing_page_ctas';
+  info: {
+    displayName: 'Landing-Page-CTA';
+  };
+  attributes: {
+    mainTitle: Attribute.String;
+    title: Attribute.String;
+    description: Attribute.Text;
+    videoSrc: Attribute.Media<'videos', true>;
+    button: Attribute.String;
+    buttonSrc: Attribute.String;
+  };
+}
+
 export interface AppracadabraComponentsImage extends Schema.Component {
   collectionName: 'components_appracadabra_components_images';
   info: {
@@ -900,6 +1422,19 @@ declare module '@strapi/types' {
       'appracadabra-components.our-apps-section': AppracadabraComponentsOurAppsSection;
       'appracadabra-components.our-apps-description-section': AppracadabraComponentsOurAppsDescriptionSection;
       'appracadabra-components.news-letter-section': AppracadabraComponentsNewsLetterSection;
+      'appracadabra-components.landing-page-why-us': AppracadabraComponentsLandingPageWhyUs;
+      'appracadabra-components.landing-page-why-us-feature-list': AppracadabraComponentsLandingPageWhyUsFeatureList;
+      'appracadabra-components.landing-page-testimonials': AppracadabraComponentsLandingPageTestimonials;
+      'appracadabra-components.landing-page-princing-content': AppracadabraComponentsLandingPagePrincingContent;
+      'appracadabra-components.landing-page-pricing-tiers': AppracadabraComponentsLandingPagePricingTiers;
+      'appracadabra-components.landing-page-pricing-main-feature': AppracadabraComponentsLandingPagePricingMainFeature;
+      'appracadabra-components.landing-page-pricing-frequencies': AppracadabraComponentsLandingPagePricingFrequencies;
+      'appracadabra-components.landing-page-hero-section': AppracadabraComponentsLandingPageHeroSection;
+      'appracadabra-components.landing-page-feature': AppracadabraComponentsLandingPageFeature;
+      'appracadabra-components.landing-page-feature-list': AppracadabraComponentsLandingPageFeatureList;
+      'appracadabra-components.landing-page-faq': AppracadabraComponentsLandingPageFaq;
+      'appracadabra-components.landing-page-faq-lists': AppracadabraComponentsLandingPageFaqLists;
+      'appracadabra-components.landing-page-cta': AppracadabraComponentsLandingPageCta;
       'appracadabra-components.image': AppracadabraComponentsImage;
       'appracadabra-components.hero-section': AppracadabraComponentsHeroSection;
       'appracadabra-components.header': AppracadabraComponentsHeader;

@@ -368,7 +368,7 @@ export interface ApiAppracadabraLandingPageAppracadabraLandingPage
   info: {
     singularName: 'appracadabra-landing-page';
     pluralName: 'appracadabra-landing-pages';
-    displayName: 'appracadabra-landing-page';
+    displayName: 'appracadabra-home-page';
     description: '';
   };
   options: {
@@ -405,6 +405,51 @@ export interface ApiAppracadabraLandingPageAppracadabraLandingPage
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::appracadabra-landing-page.appracadabra-landing-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiLandingPageLandingPage extends Schema.CollectionType {
+  collectionName: 'landing_pages';
+  info: {
+    singularName: 'landing-page';
+    pluralName: 'landing-pages';
+    displayName: 'landing-page';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Hero: Attribute.Component<'appracadabra-components.landing-page-hero-section'>;
+    Testimonial: Attribute.Component<
+      'appracadabra-components.landing-page-testimonials',
+      true
+    >;
+    FeatureSection: Attribute.Component<'appracadabra-components.landing-page-feature'>;
+    PricingContent: Attribute.Component<'appracadabra-components.landing-page-princing-content'>;
+    PricingTires: Attribute.Component<
+      'appracadabra-components.landing-page-pricing-tiers',
+      true
+    >;
+    WhyUsSection: Attribute.Component<'appracadabra-components.landing-page-why-us'>;
+    CTAContent: Attribute.Component<'appracadabra-components.landing-page-cta'>;
+    FAQSection: Attribute.Component<'appracadabra-components.landing-page-faq'>;
+    Route: Attribute.String & Attribute.DefaultTo<'your-new-route'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::landing-page.landing-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::landing-page.landing-page',
       'oneToOne',
       'admin::user'
     > &
@@ -849,6 +894,7 @@ declare module '@strapi/types' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'api::appracadabra-landing-page.appracadabra-landing-page': ApiAppracadabraLandingPageAppracadabraLandingPage;
+      'api::landing-page.landing-page': ApiLandingPageLandingPage;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_appracadabra_components_landing_page_feature_lists",
+  "info": {
+    "displayName": "Landing-Page-Feature-List",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "imageAlt": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
