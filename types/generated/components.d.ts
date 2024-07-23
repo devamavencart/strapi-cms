@@ -835,8 +835,8 @@ export interface AppracadabraComponentsLandingPagePricingTiers
     href: Attribute.String;
     featured: Attribute.Boolean & Attribute.DefaultTo<false>;
     description: Attribute.Text;
-    pricingMonthly: Attribute.String;
-    pricingAnnually: Attribute.String;
+    Monthly: Attribute.String;
+    Annually: Attribute.String;
     MainFeatures: Attribute.Component<
       'appracadabra-components.landing-page-pricing-main-feature',
       true
@@ -944,12 +944,13 @@ export interface AppracadabraComponentsLandingPageCta extends Schema.Component {
   collectionName: 'components_appracadabra_components_landing_page_ctas';
   info: {
     displayName: 'Landing-Page-CTA';
+    description: '';
   };
   attributes: {
     mainTitle: Attribute.String;
     title: Attribute.String;
     description: Attribute.Text;
-    videoSrc: Attribute.Media<'videos', true>;
+    videoSrc: Attribute.Media<'videos'>;
     button: Attribute.String;
     buttonSrc: Attribute.String;
   };
