@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_appracadabra_components_hero_sections",
+  "info": {
+    "displayName": "HeroSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "ImageSection": {
+      "displayName": "Header-Image-Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.header-image-section"
+    },
+    "buttonRedirect": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_prodbrew_components_tech_contents",
+  "info": {
+    "displayName": "Tech_content"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "icon_url": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "icon_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

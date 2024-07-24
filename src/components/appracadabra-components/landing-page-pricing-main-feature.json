@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_appracadabra_components_landing_page_pricing_main_features",
+  "info": {
+    "displayName": "Landing-Page-Pricing-MainFeature"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

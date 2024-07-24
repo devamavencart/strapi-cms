@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_appracadabra_components_landing_page_pricing_tiers",
+  "info": {
+    "displayName": "Landing-Page-Pricing-Tiers",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "Monthly": {
+      "type": "string"
+    },
+    "Annually": {
+      "type": "string"
+    },
+    "MainFeatures": {
+      "displayName": "Landing-Page-Pricing-MainFeature",
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.landing-page-pricing-main-feature"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_prodbrew_components_header_lists",
+  "info": {
+    "displayName": "Header_list"
+  },
+  "options": {},
+  "attributes": {
+    "headname": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

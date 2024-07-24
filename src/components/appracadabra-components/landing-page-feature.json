@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_appracadabra_components_landing_page_features",
+  "info": {
+    "displayName": "Landing-Page-Feature"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "FeatureList": {
+      "displayName": "Landing-Page-Feature-List",
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.landing-page-feature-list"
+    }
+  }
+}

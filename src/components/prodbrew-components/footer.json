@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_prodbrew_components_footers",
+  "info": {
+    "displayName": "Footer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "footer_description": {
+      "type": "text"
+    },
+    "social_media_icons": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "location_address": {
+      "type": "text"
+    },
+    "footer_content": {
+      "type": "component",
+      "repeatable": true,
+      "component": "prodbrew-components.footer-content"
+    }
+  }
+}

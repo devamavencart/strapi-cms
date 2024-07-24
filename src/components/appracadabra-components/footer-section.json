@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_appracadabra_components_footer_sections",
+  "info": {
+    "displayName": "FooterSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "NavigationList": {
+      "displayName": "FooterNavigationList",
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.footer-navigation-list"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

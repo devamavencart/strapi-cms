@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_appracadabra_components_landing_page_pricing_frequencies",
+  "info": {
+    "displayName": "Landing-Page--Pricing-Frequencies"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "enumeration",
+      "enum": [
+        "Annually",
+        "Monthly"
+      ]
+    }
+  }
+}

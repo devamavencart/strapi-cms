@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_appracadabra_components_landing_page_ctas",
+  "info": {
+    "displayName": "Landing-Page-CTA",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "mainTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "videoSrc": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "button": {
+      "type": "string"
+    },
+    "buttonSrc": {
+      "type": "string"
+    }
+  }
+}

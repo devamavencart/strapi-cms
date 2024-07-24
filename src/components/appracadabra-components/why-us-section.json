@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_appracadabra_components_why_us_sections",
+  "info": {
+    "displayName": "WhyUsSection"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "FeatureSection": {
+      "displayName": "WhyUsFeatures",
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.why-us-features"
+    }
+  }
+}

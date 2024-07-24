@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_appracadabra_components_testimonial_sections",
+  "info": {
+    "displayName": "TestimonialSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "titleDescription": {
+      "type": "string"
+    },
+    "FeatureTestimonialCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.feature-testimonial-section"
+    },
+    "TestimonialCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.feature-testimonial-section"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_prodbrew_components_companies",
+  "info": {
+    "displayName": "Companies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "prodbrew-components.company-content"
+    }
+  }
+}

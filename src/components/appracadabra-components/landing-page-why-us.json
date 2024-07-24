@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_appracadabra_components_landing_page_whyuses",
+  "info": {
+    "displayName": "Landing-Page-WhyUs"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "mainTitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "FeatureList": {
+      "displayName": "Landing-Page-WhyUs-Feature-List",
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.landing-page-why-us-feature-list"
+    }
+  }
+}

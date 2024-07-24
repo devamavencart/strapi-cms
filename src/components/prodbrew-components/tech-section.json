@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_prodbrew_components_tech_sections",
+  "info": {
+    "displayName": "Tech_Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "techstacks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "prodbrew-components.tech-content"
+    }
+  }
+}

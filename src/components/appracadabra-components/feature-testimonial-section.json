@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_appracadabra_components_feature_testimonial_sections",
+  "info": {
+    "displayName": "TestimonialFeatureSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "bodyContent": {
+      "type": "text"
+    },
+    "authorName": {
+      "type": "string"
+    },
+    "authorTag": {
+      "type": "string"
+    },
+    "authorImageUrl": {
+      "type": "string"
+    }
+  }
+}

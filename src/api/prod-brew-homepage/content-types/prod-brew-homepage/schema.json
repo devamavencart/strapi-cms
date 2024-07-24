@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prod_brew_homepages",
+  "info": {
+    "singularName": "prod-brew-homepage",
+    "pluralName": "prod-brew-homepages",
+    "displayName": "Prod-Brew-Homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "prodbrew-components.banner"
+    },
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "prodbrew-components.header"
+    },
+    "CompanyList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "prodbrew-components.companies"
+    },
+    "Services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "prodbrew-components.services-section"
+    },
+    "Technologies": {
+      "type": "component",
+      "repeatable": false,
+      "component": "prodbrew-components.tech-section"
+    },
+    "footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "prodbrew-components.footer"
+    }
+  }
+}

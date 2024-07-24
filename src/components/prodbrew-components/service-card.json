@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_prodbrew_components_service_cards",
+  "info": {
+    "displayName": "Service_card"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "icon_url": {
+      "type": "string"
+    },
+    "icon_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
