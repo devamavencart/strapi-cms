@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_pages",
+  "info": {
+    "singularName": "blog-page",
+    "pluralName": "blog-pages",
+    "displayName": "Blog-Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "BlogTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-page-title"
+    },
+    "imageAlt": {
+      "type": "string"
+    },
+    "ContentSection": {
+      "displayName": "Blog-page-ContentSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-page-content-section"
+    },
+    "SubscriptionSection": {
+      "displayName": "Blog-Page-Subscription-Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-page-subscription-section"
+    },
+    "FeedSection": {
+      "displayName": "Blog-Page-Feed-Section",
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.blog-page-feed-section"
+    },
+    "route": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "blog_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog-category.blog-category",
+      "inversedBy": "blog_pages"
+    }
+  }
+}

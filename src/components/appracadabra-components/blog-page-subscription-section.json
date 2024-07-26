@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_appracadabra_components_blog_page_subscription_sections",
+  "info": {
+    "displayName": "Blog-Page-Subscription-Section"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-page-title"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageAlt": {
+      "type": "string"
+    },
+    "imageCaption": {
+      "type": "string"
+    }
+  }
+}

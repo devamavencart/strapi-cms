@@ -362,101 +362,6 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiAppracadabraLandingPageAppracadabraLandingPage
-  extends Schema.CollectionType {
-  collectionName: 'appracadabra_landing_pages';
-  info: {
-    singularName: 'appracadabra-landing-page';
-    pluralName: 'appracadabra-landing-pages';
-    displayName: 'appracadabra-home-page';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Logo: Attribute.Media<'images', true>;
-    Button: Attribute.String;
-    HeaderNavbarSection: Attribute.Component<
-      'appracadabra-components.header',
-      true
-    >;
-    HeroSectionContent: Attribute.Component<'appracadabra-components.hero-section'>;
-    TestimonialSectionContent: Attribute.Component<'appracadabra-components.testimonial-section'>;
-    OurAppContent: Attribute.Component<
-      'appracadabra-components.our-apps-section',
-      true
-    >;
-    WhyUsContentSection: Attribute.Component<'appracadabra-components.why-us-section'>;
-    CTAcontentSection: Attribute.Component<'appracadabra-components.ct-asection'>;
-    NewsLetterSection: Attribute.Component<'appracadabra-components.news-letter-section'>;
-    SocialMediaLinks: Attribute.Component<
-      'appracadabra-components.social-links',
-      true
-    >;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::appracadabra-landing-page.appracadabra-landing-page',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::appracadabra-landing-page.appracadabra-landing-page',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiLandingPageLandingPage extends Schema.CollectionType {
-  collectionName: 'landing_pages';
-  info: {
-    singularName: 'landing-page';
-    pluralName: 'landing-pages';
-    displayName: 'landing-page';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Hero: Attribute.Component<'appracadabra-components.landing-page-hero-section'>;
-    Testimonial: Attribute.Component<
-      'appracadabra-components.landing-page-testimonials',
-      true
-    >;
-    FeatureSection: Attribute.Component<'appracadabra-components.landing-page-feature'>;
-    PricingContent: Attribute.Component<'appracadabra-components.landing-page-princing-content'>;
-    PricingTires: Attribute.Component<
-      'appracadabra-components.landing-page-pricing-tiers',
-      true
-    >;
-    WhyUsSection: Attribute.Component<'appracadabra-components.landing-page-why-us'>;
-    CTAContent: Attribute.Component<'appracadabra-components.landing-page-cta'>;
-    FAQSection: Attribute.Component<'appracadabra-components.landing-page-faq'>;
-    Route: Attribute.String & Attribute.DefaultTo<'your-new-route'>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::landing-page.landing-page',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::landing-page.landing-page',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -883,6 +788,221 @@ export interface PluginI18NLocale extends Schema.CollectionType {
   };
 }
 
+export interface ApiAppracadabraLandingPageAppracadabraLandingPage
+  extends Schema.CollectionType {
+  collectionName: 'appracadabra_landing_pages';
+  info: {
+    singularName: 'appracadabra-landing-page';
+    pluralName: 'appracadabra-landing-pages';
+    displayName: 'appracadabra-home-page';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Logo: Attribute.Media<'images', true>;
+    Button: Attribute.String;
+    HeaderNavbarSection: Attribute.Component<
+      'appracadabra-components.header',
+      true
+    >;
+    HeroSectionContent: Attribute.Component<'appracadabra-components.hero-section'>;
+    TestimonialSectionContent: Attribute.Component<'appracadabra-components.testimonial-section'>;
+    OurAppContent: Attribute.Component<
+      'appracadabra-components.our-apps-section',
+      true
+    >;
+    WhyUsContentSection: Attribute.Component<'appracadabra-components.why-us-section'>;
+    CTAcontentSection: Attribute.Component<'appracadabra-components.ct-asection'>;
+    NewsLetterSection: Attribute.Component<'appracadabra-components.news-letter-section'>;
+    SocialMediaLinks: Attribute.Component<
+      'appracadabra-components.social-links',
+      true
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::appracadabra-landing-page.appracadabra-landing-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::appracadabra-landing-page.appracadabra-landing-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiBlogCategoryBlogCategory extends Schema.CollectionType {
+  collectionName: 'blog_categories';
+  info: {
+    singularName: 'blog-category';
+    pluralName: 'blog-categories';
+    displayName: 'Blog-Category';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    CategoryName: Attribute.String;
+    blog_pages: Attribute.Relation<
+      'api::blog-category.blog-category',
+      'manyToMany',
+      'api::blog-page.blog-page'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::blog-category.blog-category',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::blog-category.blog-category',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiBlogCategoryPageBlogCategoryPage
+  extends Schema.CollectionType {
+  collectionName: 'blog_category_pages';
+  info: {
+    singularName: 'blog-category-page';
+    pluralName: 'blog-category-pages';
+    displayName: 'Blog-Category-Page';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    description: Attribute.Text;
+    getStartButton: Attribute.String;
+    href: Attribute.String;
+    FeatureBlogSection: Attribute.Component<'appracadabra-components.blog-category-page-feature-blog'>;
+    CTASection: Attribute.Component<'appracadabra-components.blog-category-page-cta'>;
+    CategoryPageTitle: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::blog-category-page.blog-category-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::blog-category-page.blog-category-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiBlogPageBlogPage extends Schema.CollectionType {
+  collectionName: 'blog_pages';
+  info: {
+    singularName: 'blog-page';
+    pluralName: 'blog-pages';
+    displayName: 'Blog-Page';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    description: Attribute.Text;
+    image: Attribute.Media<'images'>;
+    BlogTitle: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    imageAlt: Attribute.String;
+    ContentSection: Attribute.Component<'appracadabra-components.blog-page-content-section'>;
+    SubscriptionSection: Attribute.Component<'appracadabra-components.blog-page-subscription-section'>;
+    FeedSection: Attribute.Component<
+      'appracadabra-components.blog-page-feed-section',
+      true
+    >;
+    route: Attribute.String;
+    author: Attribute.String;
+    blog_categories: Attribute.Relation<
+      'api::blog-page.blog-page',
+      'manyToMany',
+      'api::blog-category.blog-category'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::blog-page.blog-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::blog-page.blog-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiLandingPageLandingPage extends Schema.CollectionType {
+  collectionName: 'landing_pages';
+  info: {
+    singularName: 'landing-page';
+    pluralName: 'landing-pages';
+    displayName: 'landing-page';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Hero: Attribute.Component<'appracadabra-components.landing-page-hero-section'>;
+    Testimonial: Attribute.Component<
+      'appracadabra-components.landing-page-testimonials',
+      true
+    >;
+    FeatureSection: Attribute.Component<'appracadabra-components.landing-page-feature'>;
+    PricingContent: Attribute.Component<'appracadabra-components.landing-page-princing-content'>;
+    PricingTires: Attribute.Component<
+      'appracadabra-components.landing-page-pricing-tiers',
+      true
+    >;
+    WhyUsSection: Attribute.Component<'appracadabra-components.landing-page-why-us'>;
+    CTAContent: Attribute.Component<'appracadabra-components.landing-page-cta'>;
+    FAQSection: Attribute.Component<'appracadabra-components.landing-page-faq'>;
+    Route: Attribute.String & Attribute.DefaultTo<'your-new-route'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::landing-page.landing-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::landing-page.landing-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -893,8 +1013,6 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::appracadabra-landing-page.appracadabra-landing-page': ApiAppracadabraLandingPageAppracadabraLandingPage;
-      'api::landing-page.landing-page': ApiLandingPageLandingPage;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
@@ -903,6 +1021,11 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
+      'api::appracadabra-landing-page.appracadabra-landing-page': ApiAppracadabraLandingPageAppracadabraLandingPage;
+      'api::blog-category.blog-category': ApiBlogCategoryBlogCategory;
+      'api::blog-category-page.blog-category-page': ApiBlogCategoryPageBlogCategoryPage;
+      'api::blog-page.blog-page': ApiBlogPageBlogPage;
+      'api::landing-page.landing-page': ApiLandingPageLandingPage;
     }
   }
 }

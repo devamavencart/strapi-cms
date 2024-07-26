@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_category_pages",
+  "info": {
+    "singularName": "blog-category-page",
+    "pluralName": "blog-category-pages",
+    "displayName": "Blog-Category-Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "getStartButton": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "FeatureBlogSection": {
+      "displayName": "Blog-Category-Page-Feature-Blog",
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-category-page-feature-blog"
+    },
+    "CTASection": {
+      "displayName": "Blog-Category-Page-CTA",
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-category-page-cta"
+    },
+    "CategoryPageTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-page-title"
+    }
+  }
+}

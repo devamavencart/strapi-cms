@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_appracadabra_components_blog_page_feed_sections",
+  "info": {
+    "displayName": "Blog-Page-Feed-Section"
+  },
+  "options": {},
+  "attributes": {
+    "section": {
+      "type": "string"
+    },
+    "sectionName": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-page-title"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageCaption": {
+      "type": "string"
+    },
+    "lead": {
+      "type": "text"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "ListingContent": {
+      "displayName": "Blog-Page-listingContent",
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.blog-page-listing-content"
+    }
+  }
+}

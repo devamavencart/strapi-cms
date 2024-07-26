@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_appracadabra_components_blog_category_page_ctas",
+  "info": {
+    "displayName": "Blog-Category-Page-CTA",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "getStartButton": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-page-title"
+    }
+  }
+}

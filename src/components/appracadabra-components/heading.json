@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_appracadabra_components_headings",
+  "info": {
+    "displayName": "Heading"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    }
+  }
+}

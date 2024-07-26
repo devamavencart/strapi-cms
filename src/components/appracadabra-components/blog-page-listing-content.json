@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_appracadabra_components_blog_page_listing_contents",
+  "info": {
+    "displayName": "Blog-Page-listingContent",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "text"
+    }
+  }
+}

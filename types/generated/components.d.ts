@@ -985,6 +985,17 @@ export interface AppracadabraComponentsHeroSection extends Schema.Component {
   };
 }
 
+export interface AppracadabraComponentsHeading extends Schema.Component {
+  collectionName: 'components_appracadabra_components_headings';
+  info: {
+    displayName: 'Heading';
+  };
+  attributes: {
+    title: Attribute.String;
+    tag: Attribute.String;
+  };
+}
+
 export interface AppracadabraComponentsHeader extends Schema.Component {
   collectionName: 'components_appracadabra_components_headers';
   info: {
@@ -1413,6 +1424,125 @@ export interface AppracadabraComponentsCtAsection extends Schema.Component {
   };
 }
 
+export interface AppracadabraComponentsBlogPageTitle extends Schema.Component {
+  collectionName: 'components_appracadabra_components_blog_page_titles';
+  info: {
+    displayName: 'Blog-Page-Title';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    size: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
+    tag: Attribute.Enumeration<['h1', 'h2', 'h3', 'h4', 'h5', 'h6']>;
+  };
+}
+
+export interface AppracadabraComponentsBlogPageSubscriptionSection
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_blog_page_subscription_sections';
+  info: {
+    displayName: 'Blog-Page-Subscription-Section';
+  };
+  attributes: {
+    Title: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    description: Attribute.String;
+    image: Attribute.Media<'images'>;
+    imageAlt: Attribute.String;
+    imageCaption: Attribute.String;
+  };
+}
+
+export interface AppracadabraComponentsBlogPageListingContent
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_blog_page_listing_contents';
+  info: {
+    displayName: 'Blog-Page-listingContent';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    Content: Attribute.Text;
+  };
+}
+
+export interface AppracadabraComponentsBlogPageFeedSection
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_blog_page_feed_sections';
+  info: {
+    displayName: 'Blog-Page-Feed-Section';
+  };
+  attributes: {
+    section: Attribute.String;
+    sectionName: Attribute.String;
+    Title: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    image: Attribute.Media<'images'>;
+    imageCaption: Attribute.String;
+    lead: Attribute.Text;
+    paragraph: Attribute.Text;
+    ListingContent: Attribute.Component<
+      'appracadabra-components.blog-page-listing-content',
+      true
+    >;
+  };
+}
+
+export interface AppracadabraComponentsBlogPageContentSection
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_blog_page_content_sections';
+  info: {
+    displayName: 'Blog-page-ContentSection';
+    description: '';
+  };
+  attributes: {
+    Title: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    description: Attribute.Text;
+  };
+}
+
+export interface AppracadabraComponentsBlogCategoryPageFeatureBlog
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_blog_category_page_feature_blogs';
+  info: {
+    displayName: 'Blog-Category-Page-Feature-Blog';
+    description: '';
+  };
+  attributes: {
+    description: Attribute.Text;
+    Title: Attribute.Component<'appracadabra-components.blog-page-title'>;
+  };
+}
+
+export interface AppracadabraComponentsBlogCategoryPageCta
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_blog_category_page_ctas';
+  info: {
+    displayName: 'Blog-Category-Page-CTA';
+    description: '';
+  };
+  attributes: {
+    description: Attribute.Text;
+    getStartButton: Attribute.String;
+    href: Attribute.String;
+    Title: Attribute.Component<'appracadabra-components.blog-page-title'>;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -1438,6 +1568,7 @@ declare module '@strapi/types' {
       'appracadabra-components.landing-page-cta': AppracadabraComponentsLandingPageCta;
       'appracadabra-components.image': AppracadabraComponentsImage;
       'appracadabra-components.hero-section': AppracadabraComponentsHeroSection;
+      'appracadabra-components.heading': AppracadabraComponentsHeading;
       'appracadabra-components.header': AppracadabraComponentsHeader;
       'appracadabra-components.header-image-section': AppracadabraComponentsHeaderImageSection;
       'appracadabra-components.footer-section': AppracadabraComponentsFooterSection;
@@ -1445,6 +1576,13 @@ declare module '@strapi/types' {
       'appracadabra-components.flyout-menu': AppracadabraComponentsFlyoutMenu;
       'appracadabra-components.feature-testimonial-section': AppracadabraComponentsFeatureTestimonialSection;
       'appracadabra-components.ct-asection': AppracadabraComponentsCtAsection;
+      'appracadabra-components.blog-page-title': AppracadabraComponentsBlogPageTitle;
+      'appracadabra-components.blog-page-subscription-section': AppracadabraComponentsBlogPageSubscriptionSection;
+      'appracadabra-components.blog-page-listing-content': AppracadabraComponentsBlogPageListingContent;
+      'appracadabra-components.blog-page-feed-section': AppracadabraComponentsBlogPageFeedSection;
+      'appracadabra-components.blog-page-content-section': AppracadabraComponentsBlogPageContentSection;
+      'appracadabra-components.blog-category-page-feature-blog': AppracadabraComponentsBlogCategoryPageFeatureBlog;
+      'appracadabra-components.blog-category-page-cta': AppracadabraComponentsBlogCategoryPageCta;
     }
   }
 }
