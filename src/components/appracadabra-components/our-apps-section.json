@@ -6,9 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "Description": {
       "type": "string",
       "repeatable": false
@@ -29,6 +26,11 @@
       "type": "component",
       "repeatable": true,
       "component": "appracadabra-components.our-apps-description-section"
+    },
+    "Heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-page-title"
     }
   }
 }

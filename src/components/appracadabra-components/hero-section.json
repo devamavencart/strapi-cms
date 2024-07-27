@@ -6,9 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "description": {
       "type": "text"
     },
@@ -23,6 +20,11 @@
     },
     "buttonRedirect": {
       "type": "string"
+    },
+    "Heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-page-title"
     }
   }
 }

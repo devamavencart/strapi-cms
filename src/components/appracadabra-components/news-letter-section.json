@@ -1,15 +1,18 @@
 {
   "collectionName": "components_appracadabra_components_news_letter_sections",
   "info": {
-    "displayName": "NewsLetterSection"
+    "displayName": "NewsLetterSection",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "description": {
       "type": "string"
+    },
+    "Heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-page-title"
     }
   }
 }

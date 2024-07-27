@@ -1,13 +1,11 @@
 {
   "collectionName": "components_appracadabra_components_landing_page_features",
   "info": {
-    "displayName": "Landing-Page-Feature"
+    "displayName": "Landing-Page-Feature",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "description": {
       "type": "text"
     },
@@ -16,6 +14,11 @@
       "type": "component",
       "repeatable": true,
       "component": "appracadabra-components.landing-page-feature-list"
+    },
+    "Heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-page-title"
     }
   }
 }

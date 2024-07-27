@@ -1,14 +1,12 @@
 {
   "collectionName": "components_appracadabra_components_landing_page_whyuses",
   "info": {
-    "displayName": "Landing-Page-WhyUs"
+    "displayName": "Landing-Page-WhyUs",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
-      "type": "string"
-    },
-    "mainTitle": {
       "type": "string"
     },
     "description": {
@@ -19,6 +17,11 @@
       "type": "component",
       "repeatable": true,
       "component": "appracadabra-components.landing-page-why-us-feature-list"
+    },
+    "Heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-page-title"
     }
   }
 }

@@ -9,9 +9,6 @@
     "mainTitle": {
       "type": "string"
     },
-    "title": {
-      "type": "string"
-    },
     "description": {
       "type": "text"
     },
@@ -28,6 +25,11 @@
     },
     "buttonSrc": {
       "type": "string"
+    },
+    "Heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-page-title"
     }
   }
 }
