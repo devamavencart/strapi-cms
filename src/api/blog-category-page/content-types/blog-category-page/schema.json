@@ -37,6 +37,11 @@
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.blog-page-title"
+    },
+    "MetaDetails": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.meta-data"
     }
   }
 }

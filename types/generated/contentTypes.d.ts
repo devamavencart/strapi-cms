@@ -820,6 +820,7 @@ export interface ApiAppracadabraLandingPageAppracadabraLandingPage
       'appracadabra-components.social-links',
       true
     >;
+    MetaDetails: Attribute.Component<'appracadabra-components.meta-data'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -893,6 +894,7 @@ export interface ApiBlogCategoryPageBlogCategoryPage
     FeatureBlogSection: Attribute.Component<'appracadabra-components.blog-category-page-feature-blog'>;
     CTASection: Attribute.Component<'appracadabra-components.blog-category-page-cta'>;
     CategoryPageTitle: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    MetaDetails: Attribute.Component<'appracadabra-components.meta-data'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

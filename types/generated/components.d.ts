@@ -435,6 +435,17 @@ export interface AppracadabraComponentsNewsLetterSection
   };
 }
 
+export interface AppracadabraComponentsMetaData extends Schema.Component {
+  collectionName: 'components_appracadabra_components_meta_data';
+  info: {
+    displayName: 'Meta-data';
+  };
+  attributes: {
+    metaTitle: Attribute.String;
+    metaDescription: Attribute.Text;
+  };
+}
+
 export interface AppracadabraComponentsLandingPageWhyUs
   extends Schema.Component {
   collectionName: 'components_appracadabra_components_landing_page_whyuses';
@@ -1558,6 +1569,7 @@ declare module '@strapi/types' {
       'appracadabra-components.our-apps-section': AppracadabraComponentsOurAppsSection;
       'appracadabra-components.our-apps-description-section': AppracadabraComponentsOurAppsDescriptionSection;
       'appracadabra-components.news-letter-section': AppracadabraComponentsNewsLetterSection;
+      'appracadabra-components.meta-data': AppracadabraComponentsMetaData;
       'appracadabra-components.landing-page-why-us': AppracadabraComponentsLandingPageWhyUs;
       'appracadabra-components.landing-page-why-us-feature-list': AppracadabraComponentsLandingPageWhyUsFeatureList;
       'appracadabra-components.landing-page-testimonials': AppracadabraComponentsLandingPageTestimonials;
