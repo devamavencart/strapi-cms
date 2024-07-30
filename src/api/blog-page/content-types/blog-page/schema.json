@@ -60,6 +60,11 @@
       "relation": "manyToMany",
       "target": "api::blog-category.blog-category",
       "inversedBy": "blog_pages"
+    },
+    "MetaDetails": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.meta-data"
     }
   }
 }

@@ -942,6 +942,7 @@ export interface ApiBlogPageBlogPage extends Schema.CollectionType {
       'manyToMany',
       'api::blog-category.blog-category'
     >;
+    MetaDetails: Attribute.Component<'appracadabra-components.meta-data'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -987,6 +988,7 @@ export interface ApiLandingPageLandingPage extends Schema.CollectionType {
     CTAContent: Attribute.Component<'appracadabra-components.landing-page-cta'>;
     FAQSection: Attribute.Component<'appracadabra-components.landing-page-faq'>;
     Route: Attribute.String & Attribute.DefaultTo<'your-new-route'>;
+    MetaDetails: Attribute.Component<'appracadabra-components.meta-data'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
