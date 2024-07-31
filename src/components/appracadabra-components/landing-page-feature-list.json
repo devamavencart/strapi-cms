@@ -16,11 +16,70 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "descriptionFontSize": {
+      "type": "enumeration",
+      "enum": [
+        "text-xs",
+        "text-sm",
+        "text-base",
+        "text-lg",
+        "text-xl",
+        "text-2xl",
+        "text-3xl",
+        "text-4xl",
+        "text-5xl",
+        "text-6xl",
+        "text-7xl",
+        "text-8xl",
+        "text-9xl"
+      ]
+    },
+    "descriptionLineSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "tracking-tighter\t",
+        "tracking-tight",
+        "tracking-normal",
+        "tracking-wide",
+        "tracking-wider",
+        "tracking-widest"
+      ]
+    },
+    "nameFontSize": {
+      "type": "enumeration",
+      "enum": [
+        "text-xs",
+        "text-sm",
+        "text-base",
+        "text-lg",
+        "text-xl",
+        "text-2xl",
+        "text-3xl",
+        "text-4xl",
+        "text-5xl",
+        "text-6xl",
+        "text-7xl",
+        "text-8xl",
+        "text-9xl"
+      ]
+    },
+    "nameLineSpace": {
+      "type": "enumeration",
+      "enum": [
+        "tracking-tighter\t",
+        "tracking-tight",
+        "tracking-normal",
+        "tracking-wide",
+        "tracking-wider",
+        "tracking-widest"
+      ]
     }
   }
 }

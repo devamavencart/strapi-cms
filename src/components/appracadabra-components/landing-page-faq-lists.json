@@ -1,7 +1,8 @@
 {
   "collectionName": "components_appracadabra_components_landing_page_faq_lists",
   "info": {
-    "displayName": "Landing-Page-FAQ-Lists"
+    "displayName": "Landing-Page-FAQ-Lists",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,6 +11,64 @@
     },
     "answer": {
       "type": "text"
+    },
+    "questionFontSize": {
+      "type": "enumeration",
+      "enum": [
+        "text-xs",
+        "text-sm",
+        "text-base",
+        "text-lg",
+        "text-xl",
+        "text-2xl",
+        "text-3xl",
+        "text-4xl",
+        "text-5xl",
+        "text-6xl",
+        "text-7xl",
+        "text-8xl",
+        "text-9xl"
+      ]
+    },
+    "answerLineSpace": {
+      "type": "enumeration",
+      "enum": [
+        "tracking-tighter\t",
+        "tracking-tight",
+        "tracking-normal",
+        "tracking-wide",
+        "tracking-wider",
+        "tracking-widest"
+      ]
+    },
+    "questionLineSpace": {
+      "type": "enumeration",
+      "enum": [
+        "tracking-tighter\t",
+        "tracking-tight",
+        "tracking-normal",
+        "tracking-wide",
+        "tracking-wider",
+        "tracking-widest"
+      ]
+    },
+    "answerFontSize": {
+      "type": "enumeration",
+      "enum": [
+        "text-xs",
+        "text-sm",
+        "text-base",
+        "text-lg",
+        "text-xl",
+        "text-2xl",
+        "text-3xl",
+        "text-4xl",
+        "text-5xl",
+        "text-6xl",
+        "text-7xl",
+        "text-8xl",
+        "text-9xl"
+      ]
     }
   }
 }

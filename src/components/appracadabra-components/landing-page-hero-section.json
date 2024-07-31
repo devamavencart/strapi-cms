@@ -6,15 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "description": {
-      "type": "text"
-    },
-    "linkText": {
-      "type": "string"
-    },
-    "href": {
-      "type": "string"
-    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -27,6 +18,16 @@
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.blog-page-title"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.customize-description"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.customize-button"
     }
   }
 }

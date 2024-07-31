@@ -16,9 +16,6 @@
       "type": "boolean",
       "default": false
     },
-    "description": {
-      "type": "text"
-    },
     "Monthly": {
       "type": "string"
     },

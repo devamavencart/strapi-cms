@@ -6,12 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "description": {
-      "type": "text"
-    },
     "FeatureList": {
       "displayName": "Landing-Page-WhyUs-Feature-List",
       "type": "component",
@@ -19,6 +13,16 @@
       "component": "appracadabra-components.landing-page-why-us-feature-list"
     },
     "Heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-page-title"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.customize-description"
+    },
+    "mainTitle": {
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.blog-page-title"

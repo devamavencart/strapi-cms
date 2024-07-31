@@ -6,12 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "mainTitle": {
-      "type": "string"
-    },
-    "description": {
-      "type": "text"
-    },
     "videoSrc": {
       "type": "media",
       "multiple": false,
@@ -20,16 +14,25 @@
         "videos"
       ]
     },
-    "button": {
-      "type": "string"
-    },
-    "buttonSrc": {
-      "type": "string"
-    },
     "Heading": {
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.blog-page-title"
+    },
+    "mainTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-page-title"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.customize-description"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.customize-button"
     }
   }
 }

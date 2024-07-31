@@ -507,13 +507,13 @@ export interface AppracadabraComponentsLandingPageWhyUs
     description: '';
   };
   attributes: {
-    title: Attribute.String;
-    description: Attribute.Text;
     FeatureList: Attribute.Component<
       'appracadabra-components.landing-page-why-us-feature-list',
       true
     >;
     Heading: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    description: Attribute.Component<'appracadabra-components.customize-description'>;
+    mainTitle: Attribute.Component<'appracadabra-components.blog-page-title'>;
   };
 }
 
@@ -855,6 +855,67 @@ export interface AppracadabraComponentsLandingPageWhyUsFeatureList
         'XMarkIcon'
       ]
     >;
+    nameFontSize: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
+    nameLineSpace: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
+    descriptionLineSpacing: Attribute.Enumeration<
+      [
+        'tracking-tighter\t',
+        'tracking-tight',
+        'tracking-normal',
+        'tracking-wide',
+        'tracking-wider',
+        'tracking-widest'
+      ]
+    >;
+    descriptionFontSize: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
   };
 }
 
@@ -871,6 +932,57 @@ export interface AppracadabraComponentsLandingPageTestimonials
     userFeedBack: Attribute.String;
     imgAlt: Attribute.String;
     Image: Attribute.Media<'images'>;
+    userNameFont: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
+    userProfileFont: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
+    userFeedBackFont: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
   };
 }
 
@@ -882,12 +994,12 @@ export interface AppracadabraComponentsLandingPagePrincingContent
     description: '';
   };
   attributes: {
-    description: Attribute.Text;
     PricingFrequencies: Attribute.Component<
       'appracadabra-components.landing-page-pricing-frequencies',
       true
     >;
     Heading: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    Description: Attribute.Component<'appracadabra-components.customize-description'>;
   };
 }
 
@@ -902,7 +1014,6 @@ export interface AppracadabraComponentsLandingPagePricingTiers
     name: Attribute.String;
     href: Attribute.String;
     featured: Attribute.Boolean & Attribute.DefaultTo<false>;
-    description: Attribute.Text;
     Monthly: Attribute.String;
     Annually: Attribute.String;
     MainFeatures: Attribute.Component<
@@ -917,9 +1028,37 @@ export interface AppracadabraComponentsLandingPagePricingMainFeature
   collectionName: 'components_appracadabra_components_landing_page_pricing_main_features';
   info: {
     displayName: 'Landing-Page-Pricing-MainFeature';
+    description: '';
   };
   attributes: {
     name: Attribute.String;
+    size: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
+    lineSpacing: Attribute.Enumeration<
+      [
+        'tracking-tighter\t',
+        'tracking-tight',
+        'tracking-normal',
+        'tracking-wide',
+        'tracking-wider',
+        'tracking-widest'
+      ]
+    >;
   };
 }
 
@@ -942,11 +1081,10 @@ export interface AppracadabraComponentsLandingPageHeroSection
     description: '';
   };
   attributes: {
-    description: Attribute.Text;
-    linkText: Attribute.String;
-    href: Attribute.String;
     image: Attribute.Media<'images'>;
     Heading: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    description: Attribute.Component<'appracadabra-components.customize-description'>;
+    Button: Attribute.Component<'appracadabra-components.customize-button'>;
   };
 }
 
@@ -958,12 +1096,12 @@ export interface AppracadabraComponentsLandingPageFeature
     description: '';
   };
   attributes: {
-    description: Attribute.Text;
     FeatureList: Attribute.Component<
       'appracadabra-components.landing-page-feature-list',
       true
     >;
     Heading: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    description: Attribute.Component<'appracadabra-components.customize-description'>;
   };
 }
 
@@ -979,6 +1117,60 @@ export interface AppracadabraComponentsLandingPageFeatureList
     description: Attribute.Text;
     imageAlt: Attribute.String;
     image: Attribute.Media<'images'>;
+    descriptionFontSize: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
+    descriptionLineSpacing: Attribute.Enumeration<
+      [
+        'tracking-tighter\t',
+        'tracking-tight',
+        'tracking-normal',
+        'tracking-wide',
+        'tracking-wider',
+        'tracking-widest'
+      ]
+    >;
+    nameFontSize: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
+    nameLineSpace: Attribute.Enumeration<
+      [
+        'tracking-tighter\t',
+        'tracking-tight',
+        'tracking-normal',
+        'tracking-wide',
+        'tracking-wider',
+        'tracking-widest'
+      ]
+    >;
   };
 }
 
@@ -989,12 +1181,12 @@ export interface AppracadabraComponentsLandingPageFaq extends Schema.Component {
     description: '';
   };
   attributes: {
-    description: Attribute.Text;
     FAQlists: Attribute.Component<
       'appracadabra-components.landing-page-faq-lists',
       true
     >;
     Heading: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    description: Attribute.Component<'appracadabra-components.customize-description'>;
   };
 }
 
@@ -1003,10 +1195,65 @@ export interface AppracadabraComponentsLandingPageFaqLists
   collectionName: 'components_appracadabra_components_landing_page_faq_lists';
   info: {
     displayName: 'Landing-Page-FAQ-Lists';
+    description: '';
   };
   attributes: {
     question: Attribute.Text;
     answer: Attribute.Text;
+    questionFontSize: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
+    answerLineSpace: Attribute.Enumeration<
+      [
+        'tracking-tighter\t',
+        'tracking-tight',
+        'tracking-normal',
+        'tracking-wide',
+        'tracking-wider',
+        'tracking-widest'
+      ]
+    >;
+    questionLineSpace: Attribute.Enumeration<
+      [
+        'tracking-tighter\t',
+        'tracking-tight',
+        'tracking-normal',
+        'tracking-wide',
+        'tracking-wider',
+        'tracking-widest'
+      ]
+    >;
+    answerFontSize: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
   };
 }
 
@@ -1017,12 +1264,11 @@ export interface AppracadabraComponentsLandingPageCta extends Schema.Component {
     description: '';
   };
   attributes: {
-    mainTitle: Attribute.String;
-    description: Attribute.Text;
     videoSrc: Attribute.Media<'videos'>;
-    button: Attribute.String;
-    buttonSrc: Attribute.String;
     Heading: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    mainTitle: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    description: Attribute.Component<'appracadabra-components.customize-description'>;
+    Button: Attribute.Component<'appracadabra-components.customize-button'>;
   };
 }
 

@@ -6,9 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "description": {
-      "type": "text"
-    },
     "FAQlists": {
       "displayName": "Landing-Page-FAQ-Lists",
       "type": "component",
@@ -19,6 +16,11 @@
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.blog-page-title"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.customize-description"
     }
   }
 }

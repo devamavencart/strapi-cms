@@ -6,9 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "description": {
-      "type": "text"
-    },
     "FeatureList": {
       "displayName": "Landing-Page-Feature-List",
       "type": "component",
@@ -19,6 +16,11 @@
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.blog-page-title"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.customize-description"
     }
   }
 }
