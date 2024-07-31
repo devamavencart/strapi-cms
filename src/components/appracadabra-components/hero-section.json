@@ -6,25 +6,26 @@
   },
   "options": {},
   "attributes": {
-    "description": {
-      "type": "text"
-    },
-    "buttonText": {
-      "type": "string"
-    },
     "ImageSection": {
       "displayName": "Header-Image-Section",
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.header-image-section"
     },
-    "buttonRedirect": {
-      "type": "string"
-    },
     "Heading": {
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.blog-page-title"
+    },
+    "descriptionSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.customize-description"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.customize-button"
     }
   }
 }

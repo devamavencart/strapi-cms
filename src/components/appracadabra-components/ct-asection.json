@@ -6,19 +6,20 @@
   },
   "options": {},
   "attributes": {
-    "titleSectionOne": {
-      "type": "string"
-    },
-    "onClickButton": {
-      "type": "string"
-    },
-    "onClickRedirect": {
-      "type": "string"
-    },
     "Heading": {
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.blog-page-title"
+    },
+    "Description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.customize-description"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.customize-button"
     }
   }
 }

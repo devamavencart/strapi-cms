@@ -7,12 +7,12 @@ export interface AppracadabraComponentsWhyUsSection extends Schema.Component {
     description: '';
   };
   attributes: {
-    description: Attribute.String;
     FeatureSection: Attribute.Component<
       'appracadabra-components.why-us-features',
       true
     >;
     Heading: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    description: Attribute.Component<'appracadabra-components.customize-description'>;
   };
 }
 
@@ -353,6 +353,33 @@ export interface AppracadabraComponentsWhyUsFeatures extends Schema.Component {
         'XMarkIcon'
       ]
     >;
+    descriptionLineSpacing: Attribute.Enumeration<
+      [
+        'tracking-tighter\t',
+        'tracking-tight',
+        'tracking-normal',
+        'tracking-wide',
+        'tracking-wider',
+        'tracking-widest'
+      ]
+    >;
+    descriptionFontSize: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
   };
 }
 
@@ -364,7 +391,6 @@ export interface AppracadabraComponentsTestimonialSection
     description: '';
   };
   attributes: {
-    titleDescription: Attribute.String;
     FeatureTestimonialCard: Attribute.Component<
       'appracadabra-components.feature-testimonial-section',
       true
@@ -374,6 +400,7 @@ export interface AppracadabraComponentsTestimonialSection
       true
     >;
     Heading: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    description: Attribute.Component<'appracadabra-components.customize-description'>;
   };
 }
 
@@ -399,15 +426,13 @@ export interface AppracadabraComponentsOurAppsSection extends Schema.Component {
     description: '';
   };
   attributes: {
-    Description: Attribute.String;
     Image: Attribute.Component<'appracadabra-components.image'>;
-    buttonText: Attribute.String;
-    buttonRedirect: Attribute.String;
     DescriptionSection: Attribute.Component<
       'appracadabra-components.our-apps-description-section',
       true
     >;
     Heading: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    ButtonSection: Attribute.Component<'appracadabra-components.customize-button'>;
   };
 }
 
@@ -416,9 +441,37 @@ export interface AppracadabraComponentsOurAppsDescriptionSection
   collectionName: 'components_appracadabra_components_our_apps_description_sections';
   info: {
     displayName: 'OurAppsDescriptionSection';
+    description: '';
   };
   attributes: {
     description: Attribute.Text;
+    size: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
+    lineSpacing: Attribute.Enumeration<
+      [
+        'tracking-tighter\t',
+        'tracking-tight',
+        'tracking-normal',
+        'tracking-wide',
+        'tracking-wider',
+        'tracking-widest'
+      ]
+    >;
   };
 }
 
@@ -430,8 +483,8 @@ export interface AppracadabraComponentsNewsLetterSection
     description: '';
   };
   attributes: {
-    description: Attribute.String;
     Heading: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    Description: Attribute.Component<'appracadabra-components.customize-description'>;
   };
 }
 
@@ -810,13 +863,14 @@ export interface AppracadabraComponentsLandingPageTestimonials
   collectionName: 'components_appracadabra_components_landing_page_testimonials';
   info: {
     displayName: 'Landing-Page-Testimonials';
+    description: '';
   };
   attributes: {
     userName: Attribute.String;
     userProfile: Attribute.String;
     userFeedBack: Attribute.String;
     imgAlt: Attribute.String;
-    imgSrc: Attribute.String;
+    Image: Attribute.Media<'images'>;
   };
 }
 
@@ -993,11 +1047,10 @@ export interface AppracadabraComponentsHeroSection extends Schema.Component {
     description: '';
   };
   attributes: {
-    description: Attribute.Text;
-    buttonText: Attribute.String;
     ImageSection: Attribute.Component<'appracadabra-components.header-image-section'>;
-    buttonRedirect: Attribute.String;
     Heading: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    descriptionSection: Attribute.Component<'appracadabra-components.customize-description'>;
+    Button: Attribute.Component<'appracadabra-components.customize-button'>;
   };
 }
 
@@ -1422,7 +1475,103 @@ export interface AppracadabraComponentsFeatureTestimonialSection
     bodyContent: Attribute.Text;
     authorName: Attribute.String;
     authorTag: Attribute.String;
-    authorImageUrl: Attribute.String;
+    authorImage: Attribute.Media<'images'>;
+    bodyContentSize: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
+    bodyContentLineSpacing: Attribute.Enumeration<
+      [
+        'tracking-tighter\t',
+        'tracking-tight',
+        'tracking-normal',
+        'tracking-wide',
+        'tracking-wider',
+        'tracking-widest'
+      ]
+    >;
+  };
+}
+
+export interface AppracadabraComponentsCustomizeDescription
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_customize_descriptions';
+  info: {
+    displayName: 'Customize-Description';
+    description: '';
+  };
+  attributes: {
+    description: Attribute.Text;
+    fontSize: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
+    lineSpacing: Attribute.Enumeration<
+      [
+        'tracking-tighter\t',
+        'tracking-tight',
+        'tracking-normal',
+        'tracking-wide',
+        'tracking-wider',
+        'tracking-widest'
+      ]
+    >;
+  };
+}
+
+export interface AppracadabraComponentsCustomizeButton
+  extends Schema.Component {
+  collectionName: 'components_appracadabra_components_customize_buttons';
+  info: {
+    displayName: 'Customize-Button';
+    description: '';
+  };
+  attributes: {
+    text: Attribute.String;
+    size: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
+    href: Attribute.String;
   };
 }
 
@@ -1433,10 +1582,9 @@ export interface AppracadabraComponentsCtAsection extends Schema.Component {
     description: '';
   };
   attributes: {
-    titleSectionOne: Attribute.String;
-    onClickButton: Attribute.String;
-    onClickRedirect: Attribute.String;
     Heading: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    Description: Attribute.Component<'appracadabra-components.customize-description'>;
+    Button: Attribute.Component<'appracadabra-components.customize-button'>;
   };
 }
 
@@ -1592,6 +1740,8 @@ declare module '@strapi/types' {
       'appracadabra-components.footer-navigation-list': AppracadabraComponentsFooterNavigationList;
       'appracadabra-components.flyout-menu': AppracadabraComponentsFlyoutMenu;
       'appracadabra-components.feature-testimonial-section': AppracadabraComponentsFeatureTestimonialSection;
+      'appracadabra-components.customize-description': AppracadabraComponentsCustomizeDescription;
+      'appracadabra-components.customize-button': AppracadabraComponentsCustomizeButton;
       'appracadabra-components.ct-asection': AppracadabraComponentsCtAsection;
       'appracadabra-components.blog-page-title': AppracadabraComponentsBlogPageTitle;
       'appracadabra-components.blog-page-subscription-section': AppracadabraComponentsBlogPageSubscriptionSection;

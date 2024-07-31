@@ -1,7 +1,8 @@
 {
   "collectionName": "components_appracadabra_components_landing_page_testimonials",
   "info": {
-    "displayName": "Landing-Page-Testimonials"
+    "displayName": "Landing-Page-Testimonials",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -17,8 +18,13 @@
     "imgAlt": {
       "type": "string"
     },
-    "imgSrc": {
-      "type": "string"
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

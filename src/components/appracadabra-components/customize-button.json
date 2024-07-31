@@ -1,13 +1,13 @@
 {
-  "collectionName": "components_appracadabra_components_our_apps_description_sections",
+  "collectionName": "components_appracadabra_components_customize_buttons",
   "info": {
-    "displayName": "OurAppsDescriptionSection",
+    "displayName": "Customize-Button",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "description": {
-      "type": "text"
+    "text": {
+      "type": "string"
     },
     "size": {
       "type": "enumeration",
@@ -27,16 +27,8 @@
         "text-9xl"
       ]
     },
-    "lineSpacing": {
-      "type": "enumeration",
-      "enum": [
-        "tracking-tighter\t",
-        "tracking-tight",
-        "tracking-normal",
-        "tracking-wide",
-        "tracking-wider",
-        "tracking-widest"
-      ]
+    "href": {
+      "type": "string"
     }
   }
 }

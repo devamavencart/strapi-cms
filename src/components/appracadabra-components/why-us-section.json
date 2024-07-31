@@ -6,9 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "description": {
-      "type": "string"
-    },
     "FeatureSection": {
       "displayName": "WhyUsFeatures",
       "type": "component",
@@ -19,6 +16,11 @@
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.blog-page-title"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.customize-description"
     }
   }
 }

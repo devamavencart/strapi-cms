@@ -1,29 +1,15 @@
 {
-  "collectionName": "components_appracadabra_components_feature_testimonial_sections",
+  "collectionName": "components_appracadabra_components_customize_descriptions",
   "info": {
-    "displayName": "TestimonialFeatureSection",
+    "displayName": "Customize-Description",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "bodyContent": {
+    "description": {
       "type": "text"
     },
-    "authorName": {
-      "type": "string"
-    },
-    "authorTag": {
-      "type": "string"
-    },
-    "authorImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "bodyContentSize": {
+    "fontSize": {
       "type": "enumeration",
       "enum": [
         "text-xs",
@@ -41,7 +27,7 @@
         "text-9xl"
       ]
     },
-    "bodyContentLineSpacing": {
+    "lineSpacing": {
       "type": "enumeration",
       "enum": [
         "tracking-tighter\t",

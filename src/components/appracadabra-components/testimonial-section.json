@@ -6,9 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "titleDescription": {
-      "type": "string"
-    },
     "FeatureTestimonialCard": {
       "type": "component",
       "repeatable": true,
@@ -23,6 +20,11 @@
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.blog-page-title"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.customize-description"
     }
   }
 }
