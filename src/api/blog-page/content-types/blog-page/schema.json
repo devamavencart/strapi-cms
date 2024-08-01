@@ -12,10 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "description": {
-      "type": "text"
-    },
-    "image": {
+    "authorImage": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -64,6 +61,13 @@
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.meta-data"
+    },
+    "thumnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

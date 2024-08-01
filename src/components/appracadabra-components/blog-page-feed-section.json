@@ -1,12 +1,14 @@
 {
   "collectionName": "components_appracadabra_components_blog_page_feed_sections",
   "info": {
-    "displayName": "Blog-Page-Feed-Section"
+    "displayName": "Blog-Page-Feed-Section",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "section": {
-      "type": "string"
+      "type": "string",
+      "regex": "^\\S*$"
     },
     "sectionName": {
       "type": "string"
@@ -17,11 +19,12 @@
       "component": "appracadabra-components.blog-page-title"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "imageCaption": {
       "type": "string"
@@ -37,6 +40,60 @@
       "type": "component",
       "repeatable": true,
       "component": "appracadabra-components.blog-page-listing-content"
+    },
+    "paragraphFontSize": {
+      "type": "enumeration",
+      "enum": [
+        "text-xs",
+        "text-sm",
+        "text-base",
+        "text-lg",
+        "text-xl",
+        "text-2xl",
+        "text-3xl",
+        "text-4xl",
+        "text-5xl",
+        "text-6xl",
+        "text-7xl",
+        "text-8xl",
+        "text-9xl"
+      ]
+    },
+    "leadFontSize": {
+      "type": "enumeration",
+      "enum": [
+        "text-xs",
+        "text-sm",
+        "text-base",
+        "text-lg",
+        "text-xl",
+        "text-2xl",
+        "text-3xl",
+        "text-4xl",
+        "text-5xl",
+        "text-6xl",
+        "text-7xl",
+        "text-8xl",
+        "text-9xl"
+      ]
+    },
+    "imageCaptionFontSize": {
+      "type": "enumeration",
+      "enum": [
+        "text-xs",
+        "text-sm",
+        "text-base",
+        "text-lg",
+        "text-xl",
+        "text-2xl",
+        "text-3xl",
+        "text-4xl",
+        "text-5xl",
+        "text-6xl",
+        "text-7xl",
+        "text-8xl",
+        "text-9xl"
+      ]
     }
   }
 }

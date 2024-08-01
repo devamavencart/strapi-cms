@@ -1868,13 +1868,14 @@ export interface AppracadabraComponentsBlogPageSubscriptionSection
   collectionName: 'components_appracadabra_components_blog_page_subscription_sections';
   info: {
     displayName: 'Blog-Page-Subscription-Section';
+    description: '';
   };
   attributes: {
     Title: Attribute.Component<'appracadabra-components.blog-page-title'>;
-    description: Attribute.String;
     image: Attribute.Media<'images'>;
     imageAlt: Attribute.String;
-    imageCaption: Attribute.String;
+    DescriptionSection: Attribute.Component<'appracadabra-components.customize-description'>;
+    Button: Attribute.Component<'appracadabra-components.customize-button'>;
   };
 }
 
@@ -1888,6 +1889,40 @@ export interface AppracadabraComponentsBlogPageListingContent
   attributes: {
     title: Attribute.String;
     Content: Attribute.Text;
+    titleFontSize: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
+    ContentFontSize: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
   };
 }
 
@@ -1896,6 +1931,7 @@ export interface AppracadabraComponentsBlogPageFeedSection
   collectionName: 'components_appracadabra_components_blog_page_feed_sections';
   info: {
     displayName: 'Blog-Page-Feed-Section';
+    description: '';
   };
   attributes: {
     section: Attribute.String;
@@ -1908,6 +1944,57 @@ export interface AppracadabraComponentsBlogPageFeedSection
     ListingContent: Attribute.Component<
       'appracadabra-components.blog-page-listing-content',
       true
+    >;
+    paragraphFontSize: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
+    leadFontSize: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
+    imageCaptionFontSize: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
     >;
   };
 }
@@ -1922,6 +2009,23 @@ export interface AppracadabraComponentsBlogPageContentSection
   attributes: {
     Title: Attribute.Component<'appracadabra-components.blog-page-title'>;
     description: Attribute.Text;
+    descriptionFontSize: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
   };
 }
 

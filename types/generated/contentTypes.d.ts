@@ -921,8 +921,7 @@ export interface ApiBlogPageBlogPage extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    description: Attribute.Text;
-    image: Attribute.Media<'images'>;
+    authorImage: Attribute.Media<'images'>;
     BlogTitle: Attribute.Component<'appracadabra-components.blog-page-title'>;
     imageAlt: Attribute.String;
     ContentSection: Attribute.Component<'appracadabra-components.blog-page-content-section'>;
@@ -939,6 +938,7 @@ export interface ApiBlogPageBlogPage extends Schema.CollectionType {
       'api::blog-category.blog-category'
     >;
     MetaDetails: Attribute.Component<'appracadabra-components.meta-data'>;
+    thumnail: Attribute.Media<'images'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
