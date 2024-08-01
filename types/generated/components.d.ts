@@ -1933,8 +1933,8 @@ export interface AppracadabraComponentsBlogCategoryPageFeatureBlog
     description: '';
   };
   attributes: {
-    description: Attribute.Text;
     Title: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    DescriptionSection: Attribute.Component<'appracadabra-components.customize-description'>;
   };
 }
 
@@ -1946,10 +1946,9 @@ export interface AppracadabraComponentsBlogCategoryPageCta
     description: '';
   };
   attributes: {
-    description: Attribute.Text;
-    getStartButton: Attribute.String;
-    href: Attribute.String;
     Title: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    DescriptionSection: Attribute.Component<'appracadabra-components.customize-description'>;
+    ButtonSection: Attribute.Component<'appracadabra-components.customize-button'>;
   };
 }
 

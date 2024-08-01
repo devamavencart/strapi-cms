@@ -6,19 +6,20 @@
   },
   "options": {},
   "attributes": {
-    "description": {
-      "type": "text"
-    },
-    "getStartButton": {
-      "type": "string"
-    },
-    "href": {
-      "type": "string"
-    },
     "Title": {
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.blog-page-title"
+    },
+    "DescriptionSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.customize-description"
+    },
+    "ButtonSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.customize-button"
     }
   }
 }

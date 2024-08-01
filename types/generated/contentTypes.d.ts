@@ -888,13 +888,12 @@ export interface ApiBlogCategoryPageBlogCategoryPage
     draftAndPublish: true;
   };
   attributes: {
-    description: Attribute.Text;
-    getStartButton: Attribute.String;
-    href: Attribute.String;
     FeatureBlogSection: Attribute.Component<'appracadabra-components.blog-category-page-feature-blog'>;
     CTASection: Attribute.Component<'appracadabra-components.blog-category-page-cta'>;
     CategoryPageTitle: Attribute.Component<'appracadabra-components.blog-page-title'>;
     MetaDetails: Attribute.Component<'appracadabra-components.meta-data'>;
+    DescriptionSection: Attribute.Component<'appracadabra-components.customize-description'>;
+    ButtonSection: Attribute.Component<'appracadabra-components.customize-button'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
