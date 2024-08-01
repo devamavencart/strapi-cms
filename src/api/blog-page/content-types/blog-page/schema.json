@@ -55,11 +55,10 @@
     "author": {
       "type": "string"
     },
-    "blog_category": {
+    "blog_categories": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::blog-category.blog-category",
-      "inversedBy": "blog_page"
+      "relation": "oneToMany",
+      "target": "api::blog-category.blog-category"
     },
     "MetaDetails": {
       "type": "component",

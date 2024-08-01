@@ -14,12 +14,6 @@
   "attributes": {
     "CategoryName": {
       "type": "string"
-    },
-    "blog_page": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::blog-page.blog-page",
-      "mappedBy": "blog_category"
     }
   }
 }

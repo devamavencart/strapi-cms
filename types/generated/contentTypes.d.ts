@@ -854,11 +854,6 @@ export interface ApiBlogCategoryBlogCategory extends Schema.CollectionType {
   };
   attributes: {
     CategoryName: Attribute.String;
-    blog_page: Attribute.Relation<
-      'api::blog-category.blog-category',
-      'oneToOne',
-      'api::blog-page.blog-page'
-    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -938,9 +933,9 @@ export interface ApiBlogPageBlogPage extends Schema.CollectionType {
     >;
     route: Attribute.String;
     author: Attribute.String;
-    blog_category: Attribute.Relation<
+    blog_categories: Attribute.Relation<
       'api::blog-page.blog-page',
-      'oneToOne',
+      'oneToMany',
       'api::blog-category.blog-category'
     >;
     MetaDetails: Attribute.Component<'appracadabra-components.meta-data'>;
