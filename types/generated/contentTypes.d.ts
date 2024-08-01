@@ -821,6 +821,8 @@ export interface ApiAppracadabraLandingPageAppracadabraLandingPage
       true
     >;
     MetaDetails: Attribute.Component<'appracadabra-components.meta-data'>;
+    OurAppTitle: Attribute.Component<'appracadabra-components.blog-page-title'>;
+    OurAppDescription: Attribute.Component<'appracadabra-components.customize-description'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -852,9 +854,9 @@ export interface ApiBlogCategoryBlogCategory extends Schema.CollectionType {
   };
   attributes: {
     CategoryName: Attribute.String;
-    blog_pages: Attribute.Relation<
+    blog_page: Attribute.Relation<
       'api::blog-category.blog-category',
-      'manyToMany',
+      'oneToOne',
       'api::blog-page.blog-page'
     >;
     createdAt: Attribute.DateTime;
@@ -936,9 +938,9 @@ export interface ApiBlogPageBlogPage extends Schema.CollectionType {
     >;
     route: Attribute.String;
     author: Attribute.String;
-    blog_categories: Attribute.Relation<
+    blog_category: Attribute.Relation<
       'api::blog-page.blog-page',
-      'manyToMany',
+      'oneToOne',
       'api::blog-category.blog-category'
     >;
     MetaDetails: Attribute.Component<'appracadabra-components.meta-data'>;

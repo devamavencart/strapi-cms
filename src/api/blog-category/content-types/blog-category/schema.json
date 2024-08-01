@@ -15,11 +15,11 @@
     "CategoryName": {
       "type": "string"
     },
-    "blog_pages": {
+    "blog_page": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToOne",
       "target": "api::blog-page.blog-page",
-      "mappedBy": "blog_categories"
+      "mappedBy": "blog_category"
     }
   }
 }
