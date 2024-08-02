@@ -16,10 +16,10 @@
       "type": "boolean",
       "default": false
     },
-    "Monthly": {
+    "price": {
       "type": "string"
     },
-    "Annually": {
+    "frequencyType": {
       "type": "string"
     },
     "MainFeatures": {

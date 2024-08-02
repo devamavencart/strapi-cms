@@ -6,12 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "PricingFrequencies": {
-      "displayName": "Landing-Page--Pricing-Frequencies",
-      "type": "component",
-      "repeatable": true,
-      "component": "appracadabra-components.landing-page-pricing-frequencies"
-    },
     "Heading": {
       "type": "component",
       "repeatable": false,

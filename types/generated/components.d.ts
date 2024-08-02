@@ -994,10 +994,6 @@ export interface AppracadabraComponentsLandingPagePrincingContent
     description: '';
   };
   attributes: {
-    PricingFrequencies: Attribute.Component<
-      'appracadabra-components.landing-page-pricing-frequencies',
-      true
-    >;
     Heading: Attribute.Component<'appracadabra-components.blog-page-title'>;
     Description: Attribute.Component<'appracadabra-components.customize-description'>;
   };
@@ -1014,8 +1010,8 @@ export interface AppracadabraComponentsLandingPagePricingTiers
     name: Attribute.String;
     href: Attribute.String;
     featured: Attribute.Boolean & Attribute.DefaultTo<false>;
-    Monthly: Attribute.String;
-    Annually: Attribute.String;
+    price: Attribute.String;
+    frequencyType: Attribute.String;
     MainFeatures: Attribute.Component<
       'appracadabra-components.landing-page-pricing-main-feature',
       true
