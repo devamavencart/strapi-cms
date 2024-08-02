@@ -63,11 +63,16 @@
       "component": "appracadabra-components.meta-data"
     },
     "thumnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "readingTime": {
+      "type": "string",
+      "regex": "^\\d+$"
     }
   }
 }

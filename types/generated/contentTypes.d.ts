@@ -939,6 +939,7 @@ export interface ApiBlogPageBlogPage extends Schema.CollectionType {
     >;
     MetaDetails: Attribute.Component<'appracadabra-components.meta-data'>;
     thumnail: Attribute.Media<'images'>;
+    readingTime: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
