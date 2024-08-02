@@ -73,6 +73,11 @@
     "readingTime": {
       "type": "string",
       "regex": "^\\d+$"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.customize-button"
     }
   }
 }
