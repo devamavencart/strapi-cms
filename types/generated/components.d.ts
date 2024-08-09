@@ -1872,6 +1872,8 @@ export interface AppracadabraComponentsBlogPageSubscriptionSection
     imageAlt: Attribute.String;
     DescriptionSection: Attribute.Component<'appracadabra-components.customize-description'>;
     Button: Attribute.Component<'appracadabra-components.customize-button'>;
+    SubscribeImage: Attribute.Media<'images'>;
+    SubscribeButton: Attribute.Component<'appracadabra-components.customize-button'>;
   };
 }
 
