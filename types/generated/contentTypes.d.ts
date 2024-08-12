@@ -941,6 +941,7 @@ export interface ApiBlogPageBlogPage extends Schema.CollectionType {
     thumnail: Attribute.Media<'images'>;
     readingTime: Attribute.String;
     Button: Attribute.Component<'appracadabra-components.customize-button'>;
+    canonicalUrl: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -987,6 +988,7 @@ export interface ApiLandingPageLandingPage extends Schema.CollectionType {
     FAQSection: Attribute.Component<'appracadabra-components.landing-page-faq'>;
     Route: Attribute.String & Attribute.DefaultTo<'your-new-route'>;
     MetaDetails: Attribute.Component<'appracadabra-components.meta-data'>;
+    canonicalUrl: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

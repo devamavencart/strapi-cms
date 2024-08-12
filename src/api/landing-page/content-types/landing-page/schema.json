@@ -66,6 +66,9 @@
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.meta-data"
+    },
+    "canonicalUrl": {
+      "type": "string"
     }
   }
 }
