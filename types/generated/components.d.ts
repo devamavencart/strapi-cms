@@ -433,6 +433,7 @@ export interface AppracadabraComponentsOurAppsSection extends Schema.Component {
     >;
     Heading: Attribute.Component<'appracadabra-components.blog-page-title'>;
     ButtonSection: Attribute.Component<'appracadabra-components.customize-button'>;
+    KnowMore: Attribute.Component<'appracadabra-components.customize-button'>;
   };
 }
 
