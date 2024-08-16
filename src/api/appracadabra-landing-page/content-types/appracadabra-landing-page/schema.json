@@ -78,6 +78,11 @@
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.customize-description"
+    },
+    "HeaderNavigationButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.customize-button"
     }
   }
 }

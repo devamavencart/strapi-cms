@@ -823,6 +823,7 @@ export interface ApiAppracadabraLandingPageAppracadabraLandingPage
     MetaDetails: Attribute.Component<'appracadabra-components.meta-data'>;
     OurAppTitle: Attribute.Component<'appracadabra-components.blog-page-title'>;
     OurAppDescription: Attribute.Component<'appracadabra-components.customize-description'>;
+    HeaderNavigationButton: Attribute.Component<'appracadabra-components.customize-button'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
