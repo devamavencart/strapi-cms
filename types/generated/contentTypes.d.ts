@@ -943,6 +943,7 @@ export interface ApiBlogPageBlogPage extends Schema.CollectionType {
     readingTime: Attribute.String;
     Button: Attribute.Component<'appracadabra-components.customize-button'>;
     canonicalUrl: Attribute.String;
+    authorDescription: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

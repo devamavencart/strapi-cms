@@ -81,6 +81,9 @@
     },
     "canonicalUrl": {
       "type": "string"
+    },
+    "authorDescription": {
+      "type": "text"
     }
   }
 }
