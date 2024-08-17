@@ -94,9 +94,9 @@
     "SocialShareTitle": {
       "type": "string"
     },
-    "SocialShareCTA": {
+    "SocialShareLinks": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "appracadabra-components.social-links"
     }
   }
