@@ -90,6 +90,14 @@
     },
     "authorYoutubeLink": {
       "type": "string"
+    },
+    "SocialShareTitle": {
+      "type": "string"
+    },
+    "SocialShareCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.social-links"
     }
   }
 }

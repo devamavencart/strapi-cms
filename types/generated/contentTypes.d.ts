@@ -946,6 +946,8 @@ export interface ApiBlogPageBlogPage extends Schema.CollectionType {
     authorDescription: Attribute.Text;
     authorXLink: Attribute.String;
     authorYoutubeLink: Attribute.String;
+    SocialShareTitle: Attribute.String;
+    SocialShareCTA: Attribute.Component<'appracadabra-components.social-links'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
