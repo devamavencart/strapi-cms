@@ -944,6 +944,8 @@ export interface ApiBlogPageBlogPage extends Schema.CollectionType {
     Button: Attribute.Component<'appracadabra-components.customize-button'>;
     canonicalUrl: Attribute.String;
     authorDescription: Attribute.Text;
+    authorXLink: Attribute.String;
+    authorYoutubeLink: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

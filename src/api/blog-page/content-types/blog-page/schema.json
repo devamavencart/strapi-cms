@@ -84,6 +84,12 @@
     },
     "authorDescription": {
       "type": "text"
+    },
+    "authorXLink": {
+      "type": "string"
+    },
+    "authorYoutubeLink": {
+      "type": "string"
     }
   }
 }
