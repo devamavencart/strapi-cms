@@ -414,7 +414,7 @@ export interface AppracadabraComponentsSocialLinks extends Schema.Component {
     name: Attribute.String;
     href: Attribute.String;
     icon: Attribute.Enumeration<
-      ['Facebook', 'Instagram', 'X', 'GitHub', 'Youtube']
+      ['Facebook', 'Instagram', 'X', 'GitHub', 'Youtube', 'LinkedIn']
     >;
   };
 }
