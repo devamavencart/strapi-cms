@@ -1,12 +1,12 @@
 {
-  "collectionName": "components_appracadabra_components_header_image_sections",
+  "collectionName": "components_appracadabra_components_brands_that_count_on_uses",
   "info": {
-    "displayName": "HeaderImageSection",
+    "displayName": " Brands That Count on Us",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "HeroImage": {
+    "brand_logo": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -16,6 +16,9 @@
         "videos",
         "audios"
       ]
+    },
+    "main_heading": {
+      "type": "string"
     }
   }
 }

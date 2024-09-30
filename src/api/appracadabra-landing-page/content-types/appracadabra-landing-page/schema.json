@@ -83,6 +83,39 @@
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.customize-button"
+    },
+    "BrandLogos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.brands-that-count-on-us"
+    },
+    "OurAppCTAbutton": {
+      "displayName": "OurAppActionButton",
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.our-app-action-button"
+    },
+    "BlogSectionPreview": {
+      "displayName": "BlogSectionPreview",
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-section-preview"
+    },
+    "SalesPitchSection": {
+      "displayName": "Sales Pitch",
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.sales-pitch"
+    },
+    "AppStoreIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

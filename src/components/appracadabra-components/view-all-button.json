@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_appracadabra_components_view_all_buttons",
+  "info": {
+    "displayName": "viewAllButton"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

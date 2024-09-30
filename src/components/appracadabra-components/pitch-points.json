@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_appracadabra_components_pitch_points",
+  "info": {
+    "displayName": "pitchPoints"
+  },
+  "options": {},
+  "attributes": {
+    "Point": {
+      "type": "string"
+    }
+  }
+}

@@ -1,12 +1,12 @@
 {
-  "collectionName": "components_appracadabra_components_header_image_sections",
+  "collectionName": "components_appracadabra_components_blog_cards",
   "info": {
-    "displayName": "HeaderImageSection",
+    "displayName": "BlogCards",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "HeroImage": {
+    "image": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -16,6 +16,15 @@
         "videos",
         "audios"
       ]
+    },
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "readtime": {
+      "type": "string"
     }
   }
 }

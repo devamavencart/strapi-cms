@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_appracadabra_components_section_ct_abuttons",
+  "info": {
+    "displayName": "SectionCTAbutton"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

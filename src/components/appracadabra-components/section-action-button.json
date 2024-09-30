@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_appracadabra_components_section_action_buttons",
+  "info": {
+    "displayName": "SectionActionButton"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

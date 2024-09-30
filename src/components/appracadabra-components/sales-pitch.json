@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_appracadabra_components_sales_pitches",
+  "info": {
+    "displayName": "Sales Pitch",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "mainHeading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "pitchPoints": {
+      "displayName": "pitchPoints",
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.pitch-points"
+    },
+    "CTAbutton": {
+      "displayName": "CTAbutton",
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.ct-abutton"
+    },
+    "descriptionFontSize": {
+      "type": "enumeration",
+      "enum": [
+        "text-base",
+        "text-lg",
+        "text-xl",
+        "text-2xl",
+        "text-3xl",
+        "text-4xl"
+      ]
+    }
+  }
+}

@@ -21,6 +21,16 @@
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.customize-description"
+    },
+    "leftSectionImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

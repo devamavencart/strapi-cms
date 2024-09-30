@@ -24,10 +24,14 @@
       "repeatable": false,
       "component": "appracadabra-components.customize-description"
     },
-    "Button": {
+    "actionButton": {
+      "displayName": "Buttons",
       "type": "component",
       "repeatable": false,
-      "component": "appracadabra-components.customize-button"
+      "component": "appracadabra-components.buttons"
+    },
+    "freeTrialPeroid": {
+      "type": "string"
     }
   }
 }

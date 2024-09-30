@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_appracadabra_components_star_ratings",
+  "info": {
+    "displayName": "StarRating"
+  },
+  "options": {},
+  "attributes": {
+    "noOfStars": {
+      "type": "string"
+    },
+    "noOfUsers": {
+      "type": "string"
+    }
+  }
+}

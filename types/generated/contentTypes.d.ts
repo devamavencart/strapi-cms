@@ -824,6 +824,11 @@ export interface ApiAppracadabraLandingPageAppracadabraLandingPage
     OurAppTitle: Attribute.Component<'appracadabra-components.blog-page-title'>;
     OurAppDescription: Attribute.Component<'appracadabra-components.customize-description'>;
     HeaderNavigationButton: Attribute.Component<'appracadabra-components.customize-button'>;
+    BrandLogos: Attribute.Component<'appracadabra-components.brands-that-count-on-us'>;
+    OurAppCTAbutton: Attribute.Component<'appracadabra-components.our-app-action-button'>;
+    BlogSectionPreview: Attribute.Component<'appracadabra-components.blog-section-preview'>;
+    SalesPitchSection: Attribute.Component<'appracadabra-components.sales-pitch'>;
+    AppStoreIcon: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -998,6 +1003,7 @@ export interface ApiLandingPageLandingPage extends Schema.CollectionType {
     Route: Attribute.String & Attribute.DefaultTo<'your-new-route'>;
     MetaDetails: Attribute.Component<'appracadabra-components.meta-data'>;
     canonicalUrl: Attribute.String;
+    HowItWorks: Attribute.Component<'appracadabra-components.how-it-works'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

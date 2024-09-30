@@ -69,6 +69,12 @@
     },
     "canonicalUrl": {
       "type": "string"
+    },
+    "HowItWorks": {
+      "displayName": "HowItWorks",
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.how-it-works"
     }
   }
 }

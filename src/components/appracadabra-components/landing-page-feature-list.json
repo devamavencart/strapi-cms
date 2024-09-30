@@ -80,6 +80,24 @@
         "tracking-wider",
         "tracking-widest"
       ]
+    },
+    "HowItWorks_Step1": {
+      "type": "string"
+    },
+    "HowItWorks_Step2": {
+      "type": "string"
+    },
+    "HowItWorks_Step3": {
+      "type": "string"
+    },
+    "HowItWorks_Step4": {
+      "type": "string"
+    },
+    "HowItWorks_Step5": {
+      "type": "string"
+    },
+    "HowItWorks_Step6": {
+      "type": "string"
     }
   }
 }

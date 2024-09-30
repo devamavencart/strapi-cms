@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_appracadabra_components_buttons",
+  "info": {
+    "displayName": "Buttons",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "CTAbuttonTitle": {
+      "type": "string"
+    },
+    "CTAbuttonHref": {
+      "type": "string"
+    },
+    "secondaryButtonTitle": {
+      "type": "string"
+    },
+    "secondaryButtonHref": {
+      "type": "string"
+    }
+  }
+}

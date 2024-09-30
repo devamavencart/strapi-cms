@@ -1,29 +1,23 @@
 {
-  "collectionName": "components_appracadabra_components_customize_buttons",
+  "collectionName": "components_appracadabra_components_main_headings",
   "info": {
-    "displayName": "Customize-Button",
+    "displayName": "MainHeading",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "text": {
+    "HeadingText": {
       "type": "string"
     },
-    "size": {
+    "headingSize": {
       "type": "enumeration",
       "enum": [
-        "text-xs",
-        "text-sm",
-        "text-base",
         "text-lg",
         "text-xl",
         "text-2xl",
         "text-3xl",
         "text-4xl"
       ]
-    },
-    "href": {
-      "type": "string"
     }
   }
 }

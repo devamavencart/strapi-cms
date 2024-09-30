@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_appracadabra_components_our_app_action_buttons",
+  "info": {
+    "displayName": "OurAppActionButton"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

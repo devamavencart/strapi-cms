@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_appracadabra_components_blog_section_previews",
+  "info": {
+    "displayName": "BlogSectionPreview"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "text"
+    },
+    "BlogCards": {
+      "displayName": "BlogCards",
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.blog-cards"
+    },
+    "ViewAllButton": {
+      "displayName": "viewAllButton",
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.view-all-button"
+    }
+  }
+}

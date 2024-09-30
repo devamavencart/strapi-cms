@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_appracadabra_components_how_it_works",
+  "info": {
+    "displayName": "HowItWorks",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "mainHeading": {
+      "displayName": "MainHeading",
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.main-heading"
+    },
+    "howItWorksStep": {
+      "displayName": "HowItWorksStep",
+      "type": "component",
+      "repeatable": true,
+      "component": "appracadabra-components.how-it-works-step"
+    }
+  }
+}

@@ -6,12 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "Image": {
-      "displayName": "Image",
-      "type": "component",
-      "repeatable": false,
-      "component": "appracadabra-components.image"
-    },
     "DescriptionSection": {
       "type": "component",
       "repeatable": true,
@@ -31,6 +25,22 @@
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.customize-button"
+    },
+    "starRating": {
+      "displayName": "StarRating",
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.star-rating"
+    },
+    "appIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

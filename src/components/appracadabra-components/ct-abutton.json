@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_appracadabra_components_ct_abuttons",
+  "info": {
+    "displayName": "CTAbutton"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}
