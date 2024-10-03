@@ -1004,6 +1004,8 @@ export interface ApiLandingPageLandingPage extends Schema.CollectionType {
     MetaDetails: Attribute.Component<'appracadabra-components.meta-data'>;
     canonicalUrl: Attribute.String;
     HowItWorks: Attribute.Component<'appracadabra-components.how-it-works'>;
+    BlogSection: Attribute.Component<'appracadabra-components.blog-section-preview'>;
+    SalesPitchSection: Attribute.Component<'appracadabra-components.sales-pitch'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

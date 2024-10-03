@@ -483,6 +483,9 @@ export interface AppracadabraComponentsSalesPitch extends Schema.Component {
     descriptionFontSize: Attribute.Enumeration<
       ['text-base', 'text-lg', 'text-xl', 'text-2xl', 'text-3xl', 'text-4xl']
     >;
+    mainHeadingFontSize: Attribute.Enumeration<
+      ['text-base', 'text-lg', 'text-xl', 'text-2xl', 'text-3xl', 'text-4xl']
+    >;
   };
 }
 
@@ -1471,7 +1474,7 @@ export interface AppracadabraComponentsHeaderImageSection
     description: '';
   };
   attributes: {
-    HeroImage: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    HeroImage: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 
@@ -2244,7 +2247,7 @@ export interface AppracadabraComponentsBlogCards extends Schema.Component {
     description: '';
   };
   attributes: {
-    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     title: Attribute.Text;
     description: Attribute.Text;
     readtime: Attribute.String;

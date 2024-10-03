@@ -75,6 +75,16 @@
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.how-it-works"
+    },
+    "BlogSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.blog-section-preview"
+    },
+    "SalesPitchSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "appracadabra-components.sales-pitch"
     }
   }
 }
