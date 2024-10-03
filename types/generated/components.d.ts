@@ -1191,6 +1191,7 @@ export interface AppracadabraComponentsLandingPageHeroSection
     description: Attribute.Component<'appracadabra-components.customize-description'>;
     actionButton: Attribute.Component<'appracadabra-components.buttons'>;
     freeTrialPeroid: Attribute.String;
+    appIcon: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 
