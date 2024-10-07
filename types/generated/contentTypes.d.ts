@@ -801,7 +801,7 @@ export interface ApiAppracadabraLandingPageAppracadabraLandingPage
     draftAndPublish: true;
   };
   attributes: {
-    Logo: Attribute.Media<'images', true>;
+    Logo: Attribute.Media<'images'>;
     Button: Attribute.String;
     HeaderNavbarSection: Attribute.Component<
       'appracadabra-components.header',

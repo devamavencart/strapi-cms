@@ -1,7 +1,8 @@
 {
   "collectionName": "components_appracadabra_components_blog_section_previews",
   "info": {
-    "displayName": "BlogSectionPreview"
+    "displayName": "BlogSectionPreview",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -19,6 +20,24 @@
       "type": "component",
       "repeatable": false,
       "component": "appracadabra-components.view-all-button"
+    },
+    "headingSize": {
+      "type": "enumeration",
+      "enum": [
+        "text-xs",
+        "text-sm",
+        "text-base",
+        "text-lg",
+        "text-xl",
+        "text-2xl",
+        "text-3xl",
+        "text-4xl",
+        "text-5xl",
+        "text-6xl",
+        "text-7xl",
+        "text-8xl",
+        "text-9xl"
+      ]
     }
   }
 }

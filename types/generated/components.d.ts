@@ -1300,6 +1300,7 @@ export interface AppracadabraComponentsLandingPageFaq extends Schema.Component {
     >;
     Heading: Attribute.Component<'appracadabra-components.blog-page-title'>;
     description: Attribute.Component<'appracadabra-components.customize-description'>;
+    leftSectionImage: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 
@@ -2009,11 +2010,29 @@ export interface AppracadabraComponentsBlogSectionPreview
   collectionName: 'components_appracadabra_components_blog_section_previews';
   info: {
     displayName: 'BlogSectionPreview';
+    description: '';
   };
   attributes: {
     Heading: Attribute.Text;
     BlogCards: Attribute.Component<'appracadabra-components.blog-cards', true>;
     ViewAllButton: Attribute.Component<'appracadabra-components.view-all-button'>;
+    headingSize: Attribute.Enumeration<
+      [
+        'text-xs',
+        'text-sm',
+        'text-base',
+        'text-lg',
+        'text-xl',
+        'text-2xl',
+        'text-3xl',
+        'text-4xl',
+        'text-5xl',
+        'text-6xl',
+        'text-7xl',
+        'text-8xl',
+        'text-9xl'
+      ]
+    >;
   };
 }
 
@@ -2252,6 +2271,7 @@ export interface AppracadabraComponentsBlogCards extends Schema.Component {
     title: Attribute.Text;
     description: Attribute.Text;
     readtime: Attribute.String;
+    href: Attribute.String;
   };
 }
 

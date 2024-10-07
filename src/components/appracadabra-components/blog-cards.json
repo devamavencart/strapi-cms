@@ -25,6 +25,9 @@
     },
     "readtime": {
       "type": "string"
+    },
+    "href": {
+      "type": "string"
     }
   }
 }
